@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { BookOpen, Search, ArrowRight, BookCheck, Sparkles, Filter } from 'lucide-react';
-import { MUTASHABIHAT_QUESTIONS } from '../data/mutashabihat.ts';
+import { getFullKnowledgeBase } from '../services/knowledgeBaseService.ts';
 import { ALL_SURAHS } from '../data/surahs.ts';
 import { DifferenceViewer } from './DifferenceViewer.tsx';
 
@@ -13,21 +13,22 @@ export const ReviewBookModal: React.FC<ReviewBookModalProps> = ({
 }) => {
   const [selectedSurahFilter, setSelectedSurahFilter] = useState<number | 'all'>('all');
   const [searchTerm, setSearchTerm] = useState('');
+  const allEntries = useMemo(() => getFullKnowledgeBase(), []);
 
   // Calculate count of entries per Surah (matching either target or comparison)
   const countBySurah = useMemo(() => {
     const map: Record<number, number> = {};
-    MUTASHABIHAT_QUESTIONS.forEach((q) => {
+    allEntries.forEach((q) => {
       map[q.surahNumber] = (map[q.surahNumber] || 0) + 1;
       if (q.comparisonSurahNumber) {
         map[q.comparisonSurahNumber] = (map[q.comparisonSurahNumber] || 0) + 1;
       }
     });
     return map;
-  }, []);
+  }, [allEntries]);
 
   const filteredQuestions = useMemo(() => {
-    return MUTASHABIHAT_QUESTIONS.filter((q) => {
+    return allEntries.filter((q) => {
       // Check both target surah and comparison surah!
       if (
         selectedSurahFilter !== 'all' &&
@@ -100,7 +101,7 @@ export const ReviewBookModal: React.FC<ReviewBookModalProps> = ({
               className="w-full py-2 px-3 bg-stone-50 border border-stone-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 font-medium text-stone-700 cursor-pointer"
             >
               <option value="all">
-                جميع السور في كتاب الضبط ({MUTASHABIHAT_QUESTIONS.length} موضعاً)
+                جميع السور في كتاب الضبط ({allEntries.length} موضعاً)
               </option>
               {ALL_SURAHS.map((s) => {
                 const count = countBySurah[s.number] || 0;
@@ -181,7 +182,7 @@ export const ReviewBookModal: React.FC<ReviewBookModalProps> = ({
                 }}
                 className="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white rounded-xl text-xs font-bold cursor-pointer transition-colors shadow-xs"
               >
-                عرض جميع مواضع الكتاب ({MUTASHABIHAT_QUESTIONS.length})
+                عرض جميع مواضع الكتاب ({allEntries.length})
               </button>
             </div>
           </div>

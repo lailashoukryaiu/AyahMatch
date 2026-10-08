@@ -1,6 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Volume2, BookOpen, Sparkles, ArrowRight, CheckCircle, AlertTriangle, Layers } from 'lucide-react';
-import { MUTASHABIHAT_QUESTIONS } from '../data/mutashabihat.ts';
+import { getFullKnowledgeBase } from '../services/knowledgeBaseService.ts';
 import { DifferenceViewer } from './DifferenceViewer.tsx';
 
 interface AyahSimilaritySearchProps {
@@ -11,6 +11,7 @@ export const AyahSimilaritySearch: React.FC<AyahSimilaritySearchProps> = ({
   onPracticeSurah,
 }) => {
   const [searchTerm, setSearchTerm] = useState('');
+  const allEntries = useMemo(() => getFullKnowledgeBase(), []);
 
   // Quick chips for popular mutashabihat
   const POPULAR_SEARCHES = [
@@ -28,9 +29,9 @@ export const AyahSimilaritySearch: React.FC<AyahSimilaritySearchProps> = ({
 
   const searchResults = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
-    if (!term) return MUTASHABIHAT_QUESTIONS;
+    if (!term) return allEntries;
 
-    return MUTASHABIHAT_QUESTIONS.filter((q) => {
+    return allEntries.filter((q) => {
       return (
         q.fullVerseArabic.includes(term) ||
         (q.comparisonVerseArabic && q.comparisonVerseArabic.includes(term)) ||

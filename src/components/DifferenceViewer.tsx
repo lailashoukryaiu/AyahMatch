@@ -216,7 +216,7 @@ export const DifferenceViewer: React.FC<DifferenceViewerProps> = ({ question }) 
       </div>
 
       {/* Mnemonic / Rule (قاعدة الضبط) */}
-      <div className="bg-emerald-950 text-white rounded-xl p-4 shadow-sm">
+      <div className="bg-emerald-950 text-white rounded-xl p-4 shadow-sm mb-2.5">
         <div className="flex items-center gap-1.5 text-emerald-300 text-xs font-bold mb-1">
           <BookOpen className="w-3.5 h-3.5" />
           <span>ضابط الحفظ وقاعدة التوجيه (كيف تضبطها دون تردد):</span>
@@ -224,6 +224,19 @@ export const DifferenceViewer: React.FC<DifferenceViewerProps> = ({ question }) 
         <p className="text-sm font-medium leading-relaxed text-emerald-50 text-right" dir="rtl">
           {question.explanation}
         </p>
+      </div>
+
+      {/* Provenance & Knowledge Base Reference */}
+      <div className="bg-stone-50 rounded-xl p-2.5 border border-stone-200 flex items-center justify-between text-[11px]">
+        <div className="flex items-center gap-1.5 font-bold text-stone-700">
+          <BookOpen className="w-3.5 h-3.5 text-emerald-700" />
+          <span>المرجع المعتمد:</span>
+          <span className="text-stone-900">{question.sourceBook || 'كتاب الضبط بالتقعيد للمتشابه اللفظي'}</span>
+          {question.sourcePage && <span className="text-stone-500">(ص {question.sourcePage})</span>}
+        </div>
+        <span className="bg-emerald-100 text-emerald-900 px-2 py-0.5 rounded-full font-bold text-[10px]">
+          موثق في قاعدة المعرفة ✓
+        </span>
       </div>
     </div>
   );

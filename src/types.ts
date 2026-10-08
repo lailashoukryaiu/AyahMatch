@@ -41,6 +41,19 @@ export interface MutashabihaQuestion {
   exactDifferenceNote: string;
   audioAyahUrl?: string;
   isKidsRecommended?: boolean;
+  sourceBook?: string;        // e.g. "الضبط بالتقعيد للمتشابه اللفظي" or "ملاك التأويل"
+  sourcePage?: number | string;
+  isVerifiedKnowledgeBase?: boolean;
+}
+
+export interface KnowledgeBaseSource {
+  id: string;
+  title: string;
+  author?: string;
+  fileName?: string;
+  entriesCount: number;
+  verifiedDate?: string;
+  description?: string;
 }
 
 export interface UserProgress {

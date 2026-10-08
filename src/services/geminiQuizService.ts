@@ -1,28 +1,19 @@
 import { MutashabihaQuestion } from '../types.ts';
-import { MUTASHABIHAT_QUESTIONS } from '../data/mutashabihat.ts';
+import { queryKnowledgeBase } from './knowledgeBaseService.ts';
+import { ALL_SURAHS } from '../data/surahs.ts';
 
+/**
+ * Strict Knowledge Base Provider:
+ * Guarantees zero AI hallucination by resolving all requests directly against
+ * the verified Knowledge Base extracted from accredited similarity literature.
+ */
 export async function fetchGeminiQuestions(surahNames: string[], count: number = 3): Promise<MutashabihaQuestion[]> {
-  try {
-    const res = await fetch('/api/gemini/quiz', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ surahNames, count }),
-    });
+  const surahIds = ALL_SURAHS
+    .filter((s) => surahNames.includes(s.name) || surahNames.includes(s.englishName))
+    .map((s) => s.number);
 
-    if (!res.ok) {
-      throw new Error(`Server returned ${res.status}`);
-    }
-
-    const data = await res.json();
-    if (Array.isArray(data) && data.length > 0) {
-      return data;
-    }
-  } catch (err) {
-    console.warn('Using local curated Mutashabihat bank:', err);
-  }
-
-  // Fallback to local curated question bank
-  return MUTASHABIHAT_QUESTIONS.filter(q => surahNames.includes(q.surahName));
+  return queryKnowledgeBase({
+    surahIds: surahIds.length > 0 ? surahIds : undefined,
+    limit: count,
+  });
 }

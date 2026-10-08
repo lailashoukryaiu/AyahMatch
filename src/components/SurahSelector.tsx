@@ -1,7 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Search, CheckCircle2, Circle, RefreshCw, Check, X, Layers, BookOpen, SlidersHorizontal } from 'lucide-react';
 import { ALL_SURAHS, JUZ_MAPPINGS, QURAN_PARTITIONS } from '../data/surahs.ts';
-import { MUTASHABIHAT_QUESTIONS } from '../data/mutashabihat.ts';
+import { getFullKnowledgeBase } from '../services/knowledgeBaseService.ts';
 import { QuestionType } from '../types.ts';
 
 interface SurahSelectorProps {
@@ -37,7 +37,7 @@ export const SurahSelector: React.FC<SurahSelectorProps> = ({
 
   // Count available questions based on comparisonScope
   const countMatches = (surahIds: number[], scope: 'internal_only' | 'all_quran') => {
-    return MUTASHABIHAT_QUESTIONS.filter((q) => {
+    return getFullKnowledgeBase().filter((q) => {
       if (!selectedQuestionTypes.includes(q.questionType)) return false;
 
       if (scope === 'internal_only') {
@@ -293,6 +293,20 @@ export const SurahSelector: React.FC<SurahSelectorProps> = ({
               >
                 <Check className="w-3.5 h-3.5" />
                 <span>تحديد كل السور</span>
+              </button>
+              <button
+                onClick={() => {
+                  onChangeSelected([2, 3]);
+                  onChangeComparisonScope('internal_only');
+                }}
+                className={`flex-1 sm:flex-none px-3 py-1.5 rounded-lg border text-xs font-bold transition-colors cursor-pointer flex items-center justify-center gap-1 shadow-2xs ${
+                  selectedSurahIds.length === 2 && selectedSurahIds.includes(2) && selectedSurahIds.includes(3) && comparisonScope === 'internal_only'
+                    ? 'border-emerald-600 bg-emerald-600 text-white font-black'
+                    : 'border-emerald-300 bg-emerald-50 hover:bg-emerald-100 text-emerald-800'
+                }`}
+                title="تحديد سورتي البقرة وآل عمران فقط مع نطاق تشابه داخلي"
+              >
+                <span>⭐ الزهراوان (البقرة وآل عمران)</span>
               </button>
             </div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useMemo } from 'react';
 import {
   Volume2,
   BookOpen,
@@ -72,6 +72,17 @@ export const QuizView: React.FC<QuizViewProps> = ({
   }, [currentIndex]);
 
   const currentQ = questions[currentIndex];
+
+  // Randomize options order per question so the correct option is never always first
+  const displayOptions = useMemo(() => {
+    if (!currentQ?.options) return [];
+    const opts = [...currentQ.options];
+    for (let i = opts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [opts[i], opts[j]] = [opts[j], opts[i]];
+    }
+    return opts;
+  }, [currentQ?.id]);
 
   if (!currentQ || questions.length === 0) {
     return (
@@ -210,10 +221,13 @@ export const QuizView: React.FC<QuizViewProps> = ({
         />
       </div>
 
-      {/* Surah Reference Tag */}
+      {/* Surah Reference Tag & Verified Knowledge Base Badge */}
       <div className="flex items-center justify-between mb-2 px-0.5">
-        <span className="text-xs font-black text-emerald-800">
-          سورة {currentQ.surahName} · الآية {currentQ.ayahNumber}
+        <span className="text-xs font-black text-emerald-800 flex items-center gap-1.5">
+          <span>سورة {currentQ.surahName} · الآية {currentQ.ayahNumber}</span>
+          <span className="bg-emerald-100/90 text-emerald-900 text-[10px] px-1.5 py-0.2 rounded font-bold">
+            موثق من المرجع ✓
+          </span>
         </span>
         {currentQ.comparisonSurahName && (
           <span className="text-[11px] text-stone-500">
@@ -257,7 +271,7 @@ export const QuizView: React.FC<QuizViewProps> = ({
           اختر اللفظ الصحيح في هذا الموضع:
         </div>
 
-        {currentQ.options.map((option, idx) => {
+        {displayOptions.map((option, idx) => {
           const isSelected = selectedOptionId === option.id;
           const arabicLetters = ['أ', 'ب', 'ج', 'د', 'هـ', 'و'];
           const letter = arabicLetters[idx] || `${idx + 1}`;

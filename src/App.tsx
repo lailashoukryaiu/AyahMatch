@@ -6,11 +6,12 @@ import { AyahSimilaritySearch } from './components/AyahSimilaritySearch.tsx';
 import { ReviewBookModal } from './components/ReviewBookModal.tsx';
 import { StatsView } from './components/StatsView.tsx';
 import { CompletionModal } from './components/CompletionModal.tsx';
+import { KnowledgeBaseModal } from './components/KnowledgeBaseModal.tsx';
 import { UserProgress, MutashabihaQuestion, QuestionType } from './types.ts';
-import { MUTASHABIHAT_QUESTIONS } from './data/mutashabihat.ts';
+import { queryKnowledgeBase } from './services/knowledgeBaseService.ts';
 import { sound } from './services/soundService.ts';
 
-const STORAGE_KEY = 'hafiz_quran_user_progress_v4';
+const STORAGE_KEY = 'hafiz_quran_user_progress_v5';
 
 const ALL_TYPES: QuestionType[] = [
   'single_letter',
@@ -27,9 +28,9 @@ const DEFAULT_PROGRESS: UserProgress = {
   gems: 35,
   completedQuizzes: 4,
   masteredVersesCount: 8,
-  selectedSurahIds: [18, 2, 3, 4, 5, 6, 7, 9, 10, 12, 20, 36, 55, 56, 67, 78, 79, 81, 82, 84, 87, 89, 93, 97, 98, 102, 107, 109, 110, 112, 113, 114],
+  selectedSurahIds: [2, 3], // Default: Al-Baqarah (2) and Al-Imran (3)
   selectedQuestionTypes: ALL_TYPES,
-  comparisonScope: 'all_quran',
+  comparisonScope: 'internal_only', // Default: تشابه داخلي فقط
   autoAdvance: true,
   soundEnabled: true,
   voiceReciter: 'alafasy',
@@ -60,6 +61,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState<'surahs' | 'quiz' | 'search' | 'book' | 'stats'>('surahs');
   const [activeQuestions, setActiveQuestions] = useState<MutashabihaQuestion[]>([]);
   const [showCompletion, setShowCompletion] = useState(false);
+  const [showKbModal, setShowKbModal] = useState(false);
   const [lastQuizScore, setLastQuizScore] = useState({ score: 0, total: 0 });
 
   // Sync to local storage
@@ -72,36 +74,14 @@ export default function App() {
     sound.enabled = progress.soundEnabled;
   }, [progress]);
 
-  // Strictly filter questions matching selectedSurahIds, question types, and comparisonScope
+  // Strictly query questions from verified Knowledge Base
   useEffect(() => {
-    const scope = progress.comparisonScope || 'all_quran';
-    const filtered = MUTASHABIHAT_QUESTIONS.filter((q) => {
-      if (!progress.selectedQuestionTypes.includes(q.questionType)) return false;
-
-      if (scope === 'internal_only') {
-        if (progress.selectedSurahIds.length === 1) {
-          return (
-            q.surahNumber === progress.selectedSurahIds[0] &&
-            (!q.comparisonSurahNumber || q.comparisonSurahNumber === progress.selectedSurahIds[0])
-          );
-        }
-        return (
-          progress.selectedSurahIds.includes(q.surahNumber) &&
-          (!q.comparisonSurahNumber || progress.selectedSurahIds.includes(q.comparisonSurahNumber))
-        );
-      } else {
-        return (
-          progress.selectedSurahIds.includes(q.surahNumber) ||
-          (q.comparisonSurahNumber && progress.selectedSurahIds.includes(q.comparisonSurahNumber))
-        );
-      }
+    const filtered = queryKnowledgeBase({
+      surahIds: progress.selectedSurahIds,
+      questionTypes: progress.selectedQuestionTypes,
+      comparisonScope: progress.comparisonScope || 'all_quran',
     });
-
-    if (filtered.length > 0) {
-      setActiveQuestions([...filtered].sort(() => Math.random() - 0.5));
-    } else {
-      setActiveQuestions([]);
-    }
+    setActiveQuestions(filtered);
   }, [progress.selectedSurahIds, progress.selectedQuestionTypes, progress.comparisonScope]);
 
   const handleToggleSound = () => {
@@ -134,29 +114,12 @@ export default function App() {
 
   const handlePlayAgain = () => {
     setShowCompletion(false);
-    const scope = progress.comparisonScope || 'all_quran';
-    const filtered = MUTASHABIHAT_QUESTIONS.filter((q) => {
-      if (!progress.selectedQuestionTypes.includes(q.questionType)) return false;
-
-      if (scope === 'internal_only') {
-        if (progress.selectedSurahIds.length === 1) {
-          return (
-            q.surahNumber === progress.selectedSurahIds[0] &&
-            (!q.comparisonSurahNumber || q.comparisonSurahNumber === progress.selectedSurahIds[0])
-          );
-        }
-        return (
-          progress.selectedSurahIds.includes(q.surahNumber) &&
-          (!q.comparisonSurahNumber || progress.selectedSurahIds.includes(q.comparisonSurahNumber))
-        );
-      } else {
-        return (
-          progress.selectedSurahIds.includes(q.surahNumber) ||
-          (q.comparisonSurahNumber && progress.selectedSurahIds.includes(q.comparisonSurahNumber))
-        );
-      }
+    const filtered = queryKnowledgeBase({
+      surahIds: progress.selectedSurahIds,
+      questionTypes: progress.selectedQuestionTypes,
+      comparisonScope: progress.comparisonScope || 'all_quran',
     });
-    setActiveQuestions([...filtered].sort(() => Math.random() - 0.5));
+    setActiveQuestions(filtered);
     setActiveTab('quiz');
   };
 
@@ -181,29 +144,13 @@ export default function App() {
       comparisonScope: effectiveScope,
     }));
 
-    const filtered = MUTASHABIHAT_QUESTIONS.filter((q) => {
-      if (!effectiveTypes.includes(q.questionType)) return false;
-
-      if (effectiveScope === 'internal_only') {
-        if (effectiveIds.length === 1) {
-          return (
-            q.surahNumber === effectiveIds[0] &&
-            (!q.comparisonSurahNumber || q.comparisonSurahNumber === effectiveIds[0])
-          );
-        }
-        return (
-          effectiveIds.includes(q.surahNumber) &&
-          (!q.comparisonSurahNumber || effectiveIds.includes(q.comparisonSurahNumber))
-        );
-      } else {
-        return (
-          effectiveIds.includes(q.surahNumber) ||
-          (q.comparisonSurahNumber && effectiveIds.includes(q.comparisonSurahNumber))
-        );
-      }
+    const filtered = queryKnowledgeBase({
+      surahIds: effectiveIds,
+      questionTypes: effectiveTypes,
+      comparisonScope: effectiveScope,
     });
 
-    setActiveQuestions([...filtered].sort(() => Math.random() - 0.5));
+    setActiveQuestions(filtered);
     setActiveTab('quiz');
   };
 
@@ -213,12 +160,11 @@ export default function App() {
       selectedSurahIds: [surahNumber],
       comparisonScope: 'internal_only',
     }));
-    const filtered = MUTASHABIHAT_QUESTIONS.filter(
-      (q) => q.surahNumber === surahNumber || q.comparisonSurahNumber === surahNumber
-    );
-    if (filtered.length > 0) {
-      setActiveQuestions([...filtered].sort(() => Math.random() - 0.5));
-    }
+    const filtered = queryKnowledgeBase({
+      surahIds: [surahNumber],
+      comparisonScope: 'internal_only',
+    });
+    setActiveQuestions(filtered);
     setActiveTab('quiz');
   };
 
@@ -230,6 +176,7 @@ export default function App() {
         onToggleSound={handleToggleSound}
         activeTab={activeTab}
         setActiveTab={setActiveTab}
+        onOpenKnowledgeBase={() => setShowKbModal(true)}
       />
 
       {/* Main Content Area */}
@@ -293,6 +240,12 @@ export default function App() {
           onSelectSurahs={handleSelectSurahs}
         />
       )}
+
+      {/* Knowledge Base Quality & Sources Modal */}
+      <KnowledgeBaseModal
+        isOpen={showKbModal}
+        onClose={() => setShowKbModal(false)}
+      />
     </div>
   );
 }

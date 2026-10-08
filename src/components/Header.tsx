@@ -7,6 +7,7 @@ interface HeaderProps {
   onToggleSound: () => void;
   activeTab: 'surahs' | 'quiz' | 'search' | 'book' | 'stats';
   setActiveTab: (tab: 'surahs' | 'quiz' | 'search' | 'book' | 'stats') => void;
+  onOpenKnowledgeBase?: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -14,6 +15,7 @@ export const Header: React.FC<HeaderProps> = ({
   onToggleSound,
   activeTab,
   setActiveTab,
+  onOpenKnowledgeBase,
 }) => {
   return (
     <header className="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-stone-200">
@@ -112,6 +114,21 @@ export const Header: React.FC<HeaderProps> = ({
             <ShieldCheck className="w-4 h-4" />
             <span className="tabular-nums">{progress.masteredVersesCount}</span>
           </div>
+
+          {/* Knowledge Base Badge */}
+          {onOpenKnowledgeBase && (
+            <button
+              onClick={onOpenKnowledgeBase}
+              className="px-2.5 py-1 rounded-xl bg-emerald-50 hover:bg-emerald-100 text-emerald-800 border border-emerald-200/90 text-xs font-bold transition-all cursor-pointer flex items-center gap-1.5 shadow-2xs"
+              title="عرض قاعدة المعرفة المعتمدة والمراجع وفهرسة الـ PDF"
+            >
+              <ShieldCheck className="w-3.5 h-3.5 text-emerald-700" />
+              <span className="hidden md:inline">قاعدة المعرفة</span>
+              <span className="bg-emerald-700 text-white text-[10px] px-1.5 py-0.2 rounded-full font-sans">
+                100% موثقة
+              </span>
+            </button>
+          )}
 
           {/* Sound Toggle */}
           <button
