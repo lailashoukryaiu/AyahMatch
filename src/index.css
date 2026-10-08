@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-quran {
+    font-family: 'Amiri Quran', 'Amiri', serif;
+  }
+  .font-arabic {
+    font-family: 'Cairo', 'Amiri', system-ui, sans-serif;
+  }
+}
+
+body {
+  font-family: 'Cairo', 'Amiri', system-ui, -apple-system, sans-serif;
+}
+
+.btn-duo-green {
+  background-color: #059669;
+  border-bottom: 4px solid #047857;
+  transition: all 0.1s ease-in-out;
+}
+.btn-duo-green:hover {
+  background-color: #10b981;
+}
+.btn-duo-green:active {
+  transform: translateY(2px);
+  border-bottom-width: 2px;
+}

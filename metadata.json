@@ -1,0 +1,6 @@
+{
+  "name": "حافِظ - مُتَشَابِهَاتُ القُرْآنِ الكَرِيم",
+  "description": "تطبيق تفاعلي لضبط وتثبيت متشابهات القرآن الكريم بدقة الحرف والكلمة والعبارة مع التلاوة الصوتية واختبارات متدرجة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
