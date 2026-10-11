@@ -55,6 +55,14 @@ export const SurahSelector: React.FC<SurahSelectorProps> = ({
     return countMatches(selectedSurahIds, comparisonScope);
   }, [selectedSurahIds, selectedQuestionTypes, comparisonScope]);
 
+  const internalScopeCount = useMemo(() => {
+    return countMatches(selectedSurahIds, 'internal_only');
+  }, [selectedSurahIds, selectedQuestionTypes]);
+
+  const allScopeCount = useMemo(() => {
+    return countMatches(selectedSurahIds, 'all_quran');
+  }, [selectedSurahIds, selectedQuestionTypes]);
+
   const filteredSurahs = useMemo(() => {
     const term = searchTerm.trim().toLowerCase();
     if (!term) return ALL_SURAHS;
@@ -181,27 +189,41 @@ export const SurahSelector: React.FC<SurahSelectorProps> = ({
           <div className="flex items-center gap-1.5 p-1 bg-stone-100 rounded-lg">
             <button
               onClick={() => onChangeComparisonScope('internal_only')}
-              className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${
+              className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer flex items-center gap-1 ${
                 comparisonScope === 'internal_only'
                   ? 'bg-white text-emerald-900 shadow-2xs font-black'
                   : 'text-stone-600 hover:text-stone-900'
               }`}
-              title="إذا اخترت سورة واحدة يظهر فقط تشابهها مع نفسها، وإذا اخترت سورتين يظهر فقط ما بينهما"
+              title="تشابه السورة مع نفسها فقط (من كتاب متشابهات كل سورة مع نفسها)"
             >
-              داخل السور المحددة فقط (متشابه داخلي)
+              <span>داخل السورة فقط (افتراضي)</span>
+              <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                comparisonScope === 'internal_only' ? 'bg-emerald-100 text-emerald-800' : 'bg-stone-200 text-stone-600'
+              }`}>
+                {internalScopeCount}
+              </span>
             </button>
 
             <button
               onClick={() => onChangeComparisonScope('all_quran')}
-              className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer ${
+              className={`px-2.5 py-1 text-xs font-bold rounded-md transition-all cursor-pointer flex items-center gap-1 ${
                 comparisonScope === 'all_quran'
                   ? 'bg-white text-emerald-900 shadow-2xs font-black'
                   : 'text-stone-600 hover:text-stone-900'
               }`}
+              title="يجمع جميع مواضع المتشابه للسور المختارة (كتاب كل سورة مع نفسها + كتاب توضيح البيان)"
             >
-              مع كل سور القرآن
+              <span>مع كل سور القرآن (شامل)</span>
+              <span className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                comparisonScope === 'all_quran' ? 'bg-emerald-100 text-emerald-800' : 'bg-stone-200 text-stone-600'
+              }`}>
+                {allScopeCount}
+              </span>
             </button>
           </div>
+        </div>
+        <div className="text-[11px] text-stone-500 mt-1">
+          💡 يتم الاستخراج من كتابي المتشابهات: <span className="font-semibold text-stone-700">«متشابهات كل سورة مع نفسها»</span> و<span className="font-semibold text-stone-700">«توضيح البيان بين السور»</span> وفق اختيارك.
         </div>
 
         {/* Collapsible Question Types filter */}

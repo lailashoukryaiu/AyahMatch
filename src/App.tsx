@@ -30,7 +30,7 @@ const DEFAULT_PROGRESS: UserProgress = {
   masteredVersesCount: 8,
   selectedSurahIds: [2, 3], // Default: Al-Baqarah (2) and Al-Imran (3)
   selectedQuestionTypes: ALL_TYPES,
-  comparisonScope: 'internal_only', // Default: تشابه داخلي فقط
+  comparisonScope: 'internal_only', // Default: داخل السورة فقط (تشابه داخلي)
   autoAdvance: true,
   soundEnabled: true,
   voiceReciter: 'alafasy',
@@ -47,7 +47,7 @@ export default function App() {
             ...DEFAULT_PROGRESS,
             ...parsed,
             selectedQuestionTypes: parsed.selectedQuestionTypes || ALL_TYPES,
-            comparisonScope: parsed.comparisonScope || 'all_quran',
+            comparisonScope: parsed.comparisonScope || 'internal_only',
             autoAdvance: parsed.autoAdvance !== undefined ? parsed.autoAdvance : true,
           };
         }
@@ -79,7 +79,7 @@ export default function App() {
     const filtered = queryKnowledgeBase({
       surahIds: progress.selectedSurahIds,
       questionTypes: progress.selectedQuestionTypes,
-      comparisonScope: progress.comparisonScope || 'all_quran',
+      comparisonScope: progress.comparisonScope || 'internal_only',
     });
     setActiveQuestions(filtered);
   }, [progress.selectedSurahIds, progress.selectedQuestionTypes, progress.comparisonScope]);
@@ -117,7 +117,7 @@ export default function App() {
     const filtered = queryKnowledgeBase({
       surahIds: progress.selectedSurahIds,
       questionTypes: progress.selectedQuestionTypes,
-      comparisonScope: progress.comparisonScope || 'all_quran',
+      comparisonScope: progress.comparisonScope || 'internal_only',
     });
     setActiveQuestions(filtered);
     setActiveTab('quiz');
@@ -135,7 +135,7 @@ export default function App() {
   ) => {
     const effectiveIds = ids ?? progress.selectedSurahIds;
     const effectiveTypes = types ?? progress.selectedQuestionTypes;
-    const effectiveScope = scope ?? progress.comparisonScope ?? 'all_quran';
+    const effectiveScope = scope ?? progress.comparisonScope ?? 'internal_only';
 
     setProgress((prev) => ({
       ...prev,
@@ -191,7 +191,7 @@ export default function App() {
             onChangeQuestionTypes={(types) =>
               setProgress((prev) => ({ ...prev, selectedQuestionTypes: types }))
             }
-            comparisonScope={progress.comparisonScope || 'all_quran'}
+            comparisonScope={progress.comparisonScope || 'internal_only'}
             onChangeComparisonScope={(scope) =>
               setProgress((prev) => ({ ...prev, comparisonScope: scope }))
             }

@@ -1,4 +1,4 @@
-import { MutashabihaQuestion } from "../types.ts";
+import { MutashabihaQuestion } from '../types.ts';
 
 export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
   {
@@ -866,38 +866,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "yunus-92-nunajjika-letter",
-    "surahNumber": 10,
-    "surahName": "يونس",
-    "ayahNumber": 92,
-    "questionType": "single_word",
-    "verseSnippet": "فَالْيَوْمَ [___] بِبَدَنِكَ لِتَكُونَ لِمَنْ خَلْفَكَ آيَةً ۚ وَإِنَّ كَثِيرًا مِنَ النَّاسِ عَنْ آيَاتِنَا لَغَافِلُونَ",
-    "fullVerseArabic": "فَالْيَوْمَ نُنَجِّيكَ بِبَدَنِكَ لِتَكُونَ لِمَنْ خَلْفَكَ آيَةً",
-    "comparisonSurahNumber": 21,
-    "comparisonSurahName": "الأنبياء",
-    "comparisonAyahNumber": 88,
-    "comparisonVerseArabic": "فَاسْتَجَبْنَا لَهُ وَنَجَّيْنَاهُ مِنَ الْغَمِّ ۚ وَكَذَٰلِكَ نُنْجِي الْمُؤْمِنِينَ",
-    "prompt": "دقة اللفظ لفرعون في يونس 92: ما الكلمة الصحيحة بعد (فَالْيَوْمَ)؟",
-    "promptArabic": "دقة اللفظ لفرعون في سورة يونس: هل قال الله (نُنَجِّيكَ) أم (نُنْجِيكَ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "نُنَجِّيكَ (بالتشديد والكاف)",
-        "isCorrect": true,
-        "highlightPart": "نُنَجِّيكَ"
-      },
-      {
-        "id": "opt-2",
-        "text": "نُلْقِيكَ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في يونس 92: (فَالْيَوْمَ نُنَجِّيكَ بِبَدَنِكَ). النجاة هنا بمعنى إلقاء بدنه على نجوة من الأرض ليراه بنو إسرائيل.",
-    "explanation": "التضعيف في (نُنَجِّيكَ) دلالة على إخراجه سالماً من قاع البحر على مرتفع ليتحقق موته للجميع.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "hud-60-buadan-aad",
     "surahNumber": 11,
     "surahName": "هود",
@@ -1024,38 +992,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "exactDifferenceNote": "في إبراهيم 34: (إِنَّ الْإِنسَانَ لَظَلُومٌ كَفَّارٌ). وفي النحل 18: (إِنَّ اللَّهَ لَغَفُورٌ رَّحِيمٌ).",
     "explanation": "قاعدة الضبط المشهورة: سورة إبراهيم في بيان جحود الإنسان وظلمه لنعم الله، وسورة النحل هي سورة النعم فناسَب ختمها برحمة المنعم ومغفرته.",
     "isKidsRecommended": false
-  },
-  {
-    "id": "hijr-9-hafizoon",
-    "surahNumber": 15,
-    "surahName": "الحجر",
-    "ayahNumber": 9,
-    "questionType": "single_word",
-    "verseSnippet": "إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ [___]",
-    "fullVerseArabic": "إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ",
-    "comparisonSurahNumber": 15,
-    "comparisonSurahName": "الحجر",
-    "comparisonAyahNumber": 9,
-    "comparisonVerseArabic": "إِنَّا نَحْنُ نَزَّلْنَا الذِّكْرَ وَإِنَّا لَهُ لَحَافِظُونَ",
-    "prompt": "دقة اللفظ في حفظ القرآن بسورة الحجر: ما الكلمة في ختام الآية؟",
-    "promptArabic": "دقة اللفظ في وعد حفظ القرآن: ما اللفظ القرآني الدقيق في خاتمة الآية 9 من سورة الحجر؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "لَحَافِظُونَ (بلام التوكيد واسم الفاعل جمعاً)",
-        "isCorrect": true,
-        "highlightPart": "لَحَافِظُونَ"
-      },
-      {
-        "id": "opt-2",
-        "text": "نَحْفَظُهُ (بالفعل المضارع)",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الحجر: (وَإِنَّا لَهُ لَحَافِظُونَ) توكيد باللام واسم الفاعل الدال على الثبوت والدوام.",
-    "explanation": "الآية اشتملت على أقوى صيغ التوكيد: (إنّا) + ضمير الفصل (نحن) + (وإنّا) + اللام المزحلقة (لحافظون).",
-    "isKidsRecommended": true
   },
   {
     "id": "nahl-1-amr-allah",
@@ -1577,24 +1513,24 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "questionType": "single_word",
     "verseSnippet": "وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ [___]",
     "fullVerseArabic": "وَإِذْ قَالَ لُقْمَانُ لِابْنِهِ وَهُوَ يَعِظُهُ يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ",
-    "comparisonSurahNumber": 31,
-    "comparisonSurahName": "لقمان",
-    "comparisonAyahNumber": 13,
-    "comparisonVerseArabic": "إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ",
-    "prompt": "خاتمة موعظة لقمان الأولى لابنه: ما الوصف الدقيق للشرك؟",
-    "promptArabic": "خاتمة موعظة لقمان الأولى: ما الوصف الدقيق للشرك في ختام الآية 13؟",
+    "comparisonSurahNumber": 4,
+    "comparisonSurahName": "النساء",
+    "comparisonAyahNumber": 48,
+    "comparisonVerseArabic": "إِنَّ اللَّهَ لَا يَغْفِرُ أَن يُشْرَكَ بِهِ وَيَغْفِرُ مَا دُونَ ذَٰلِكَ لِمَن يَشَاءُ وَمَن يُشْرِكْ بِاللَّهِ فَقَدِ افْتَرَىٰ إِثْمًا عَظِيمًا",
+    "prompt": "مقارنة بين ختام لقمان 13 والنساء 48 في وصف الشرك",
+    "promptArabic": "في سورة لقمان الآية 13: ما الوصف الدقيق لقوله تعالى: (يَا بُنَيَّ لَا تُشْرِكْ بِاللَّهِ ۖ إِنَّ الشِّرْكَ [___])؟",
     "options": [
       {
         "id": "opt-1",
-        "text": "لَظُلْمٌ عَظِيمٌ (باللام المزحلقة)",
+        "text": "لَظُلْمٌ عَظِيمٌ",
         "isCorrect": true,
-        "highlightPart": "لَظُلْمٌ عَظِيمٌ"
+        "highlightPart": "لقمان 13: لَظُلْمٌ عَظِيمٌ"
       },
       {
         "id": "opt-2",
         "text": "إِثْمٌ عَظِيمٌ",
         "isCorrect": false,
-        "highlightPart": "سورة النساء 48"
+        "highlightPart": "النساء 48: إِثْمًا عَظِيمًا"
       }
     ],
     "exactDifferenceNote": "في لقمان 13: (إِنَّ الشِّرْكَ لَظُلْمٌ عَظِيمٌ). لما نزلت شق ذلك على الصحابة فقال النبي ﷺ: «ليس كما تظنون، إنما هو كما قال لقمان لابنه».",
@@ -1986,38 +1922,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "ahqaf-35-fasbir-kama-sabara",
-    "surahNumber": 46,
-    "surahName": "الأحقاف",
-    "ayahNumber": 35,
-    "questionType": "single_word",
-    "verseSnippet": "فَاصْبِرْ كَمَا صَبَرَ [___] مِنَ الرُّسُلِ وَلَا تَسْتَعْجِلْ لَهُمْ",
-    "fullVerseArabic": "فَاصْبِرْ كَمَا صَبَرَ أُولُو الْعَزْمِ مِنَ الرُّسُلِ وَلَا تَسْتَعْجِلْ لَهُمْ",
-    "comparisonSurahNumber": 46,
-    "comparisonSurahName": "الأحقاف",
-    "comparisonAyahNumber": 35,
-    "comparisonVerseArabic": "فَاصْبِرْ كَمَا صَبَرَ أُولُو الْعَزْمِ مِنَ الرُّسُلِ",
-    "prompt": "أمر الصبر في ختام الأحقاف: ما وصف الرسل الذين أُمر النبي ﷺ بالاقتداء بصبرهم؟",
-    "promptArabic": "أمر الصبر في ختام الأحقاف 35: ما اللفظ القرآني لوصف الرسل في الآية؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "أُولُو الْعَزْمِ (أصحاب العزيمة العالية)",
-        "isCorrect": true,
-        "highlightPart": "أُولُو الْعَزْمِ"
-      },
-      {
-        "id": "opt-2",
-        "text": "أُولُو الْقُوَّةِ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الأحقاف 35: (فَاصْبِرْ كَمَا صَبَرَ أُولُو الْعَزْمِ مِنَ الرُّسُلِ). أولو العزم المشهورون: نوح، إبراهيم، موسى، عيسى، ومحمد ﷺ.",
-    "explanation": "ختام السورة بأعظم موعظة وتثبيت للنبي ﷺ بالصبر كصبر أولي العزم من الرسل الكرام.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "muhammad-24-afala-yatadabbaroon",
     "surahNumber": 47,
     "surahName": "محمد",
@@ -2210,38 +2114,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "najm-3-4-wahyun-yooha",
-    "surahNumber": 53,
-    "surahName": "النجم",
-    "ayahNumber": 4,
-    "questionType": "single_word",
-    "verseSnippet": "وَمَا يَنْطِقُ عَنِ الْهَوَىٰ (3) * إِنْ هُوَ إِلَّا وَحْيٌ [___] (4)",
-    "fullVerseArabic": "إِنْ هُوَ إِلَّا وَحْيٌ يُوحَىٰ",
-    "comparisonSurahNumber": 53,
-    "comparisonSurahName": "النجم",
-    "comparisonAyahNumber": 4,
-    "comparisonVerseArabic": "إِنْ هُوَ إِلَّا وَحْيٌ يُوحَىٰ",
-    "prompt": "تمام الآية 4 في سورة النجم بعد (وَحْيٌ): ما الفعل المضارع؟",
-    "promptArabic": "عصمة النطق النبوي في النجم: ما اللفظ القرآني في الآية 4 بعد (وَحْيٌ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "يُوحَىٰ (مبني للمجهول)",
-        "isCorrect": true,
-        "highlightPart": "يُوحَىٰ"
-      },
-      {
-        "id": "opt-2",
-        "text": "يُتْلَىٰ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في النجم 4: (إِنْ هُوَ إِلَّا وَحْيٌ يُوحَىٰ). تناسب فواصل النجم المنتهية بالألف المقصورة: هوى، غوى، قوى، يوحى.",
-    "explanation": "فواصل سورة النجم كلها على نغمة الرويّ بالألف الممالة أو المقصورة.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "qamar-17-yassarna-quran",
     "surahNumber": 54,
     "surahName": "القمر",
@@ -2370,38 +2242,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "mujadila-7-najwa-thalathah",
-    "surahNumber": 58,
-    "surahName": "المجادلة",
-    "ayahNumber": 7,
-    "questionType": "single_word",
-    "verseSnippet": "مَا يَكُونُ مِنْ نَجْوَىٰ ثَلَاثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ [___]",
-    "fullVerseArabic": "مَا يَكُونُ مِنْ نَجْوَىٰ ثَلَاثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَا أَدْنَىٰ مِنْ ذَٰلِكَ وَلَا أَكْثَرَ إِلَّا هُوَ مَعَهُمْ",
-    "comparisonSurahNumber": 58,
-    "comparisonSurahName": "المجادلة",
-    "comparisonAyahNumber": 7,
-    "comparisonVerseArabic": "مَا يَكُونُ مِنْ نَجْوَىٰ ثَلَاثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ",
-    "prompt": "معية الله وإحاطته بالنجوى في المجادلة 7: ما ترتيب العدد بعد خمسة؟",
-    "promptArabic": "إحاطة علم الله بالنجوى في المجادلة 7: ما اللفظ بعد (وَلَا خَمْسَةٍ إِلَّا هُوَ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "سَادِسُهُمْ (إضافة واحد للمجموع)",
-        "isCorrect": true,
-        "highlightPart": "سَادِسُهُمْ"
-      },
-      {
-        "id": "opt-2",
-        "text": "خَامِسُهُمْ",
-        "isCorrect": false,
-        "highlightPart": "خطأ عددي"
-      }
-    ],
-    "exactDifferenceNote": "في المجادلة 7: مع كل عدد يضيف نفسه شهيداً ومحيطاً: ثلاثة هو رابعهم، خمسة هو سادسهم.",
-    "explanation": "بيان معية العلم والشهود الإلهي التي لا يعزب عنها مثقال ذرة في الأرض ولا في السماء.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "hashr-23-quddoos-salam",
     "surahNumber": 59,
     "surahName": "الحشر",
@@ -2464,38 +2304,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "exactDifferenceNote": "في الممتحنة 4: (قَدْ كَانَتْ لَكُمْ أُسْوَةٌ حَسَنَةٌ فِي إِبْرَاهِيمَ) بدون لام وبالتأنيث (كانت). وفي الأحزاب 21: (لَّقَدْ كَانَ لَكُمْ فِي رَسُولِ اللَّهِ) باللام والتذكير (كان).",
     "explanation": "ضابط الحفظ: تذكير (كان) في الأحزاب لمناسبة النبي ﷺ وتأنيث (كانت) في الممتحنة لمناسبة لفظ الأسوة.",
     "isKidsRecommended": false
-  },
-  {
-    "id": "saff-2-lima-taqooloon",
-    "surahNumber": 61,
-    "surahName": "الصف",
-    "ayahNumber": 2,
-    "questionType": "single_word",
-    "verseSnippet": "يَا أَيُّهَا الَّذِينَ آمَنُوا لِمَ تَقُولُونَ مَا لَا تَفْعَلُونَ (2) * [___] مَقْتًا عِنْدَ اللَّهِ أَنْ تَقُولُوا مَا لَا تَفْعَلُونَ (3)",
-    "fullVerseArabic": "كَبُرَ مَقْتًا عِنْدَ اللَّهِ أَنْ تَقُولُوا مَا لَا تَفْعَلُونَ",
-    "comparisonSurahNumber": 61,
-    "comparisonSurahName": "الصف",
-    "comparisonAyahNumber": 3,
-    "comparisonVerseArabic": "كَبُرَ مَقْتًا عِنْدَ اللَّهِ أَنْ تَقُولُوا مَا لَا تَفْعَلُونَ",
-    "prompt": "الفعل في مطلع الآية 3 من سورة الصف: ما الفعل قبل (مَقْتًا عِنْدَ اللَّهِ)؟",
-    "promptArabic": "الفعل في مطلع الآية 3 من الصف: ما الفعل الدقيق المعبر عن شدة المقت؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "كَبُرَ (بضم الباء)",
-        "isCorrect": true,
-        "highlightPart": "كَبُرَ مَقْتًا"
-      },
-      {
-        "id": "opt-2",
-        "text": "عَظُمَ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الصف 3: (كَبُرَ مَقْتًا عِندَ اللَّهِ أَن تَقُولُوا مَا لَا تَفْعَلُونَ) مثل قوله في الكهف 5: (كَبُرَتْ كَلِمَةً).",
-    "explanation": "كَبُرَ بضم الباء فعل جامد للذم المغلظ لمخالفة القول العمل.",
-    "isKidsRecommended": true
   },
   {
     "id": "jumuah-1-yusabbihu-lillah",
@@ -2914,70 +2722,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "qiyamah-16-la-tuharrik",
-    "surahNumber": 75,
-    "surahName": "القيامة",
-    "ayahNumber": 16,
-    "questionType": "phrase_diff",
-    "verseSnippet": "لَا تُحَرِّكْ بِهِ [___] لِتَعْجَلَ بِهِ (16) * إِنَّ عَلَيْنَا [___] وَقُرْآنَهُ (17)",
-    "fullVerseArabic": "لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ * إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ",
-    "comparisonSurahNumber": 20,
-    "comparisonSurahName": "طه",
-    "comparisonAyahNumber": 114,
-    "comparisonVerseArabic": "وَلَا تَعْجَلْ بِالْقُرْآنِ مِنْ قَبْلِ أَنْ يُقْضَىٰ إِلَيْكَ وَحْيُهُ",
-    "prompt": "النهي عن العجلة بالقرآن: ما العبارة في سورة القيامة 16-17؟",
-    "promptArabic": "النهي عن العجلة بالقرآن في القيامة: ما اللفظ في الآيتين 16 و 17؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "لِسَانَكَ ... جَمْعَهُ (لا تحرك به لسانك ... إن علينا جمعه)",
-        "isCorrect": true,
-        "highlightPart": "لِسَانَكَ ... جَمْعَهُ"
-      },
-      {
-        "id": "opt-2",
-        "text": "شَفَتَيْكَ ... حِفْظَهُ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في القيامة 16-17: (لَا تُحَرِّكْ بِهِ لِسَانَكَ لِتَعْجَلَ بِهِ * إِنَّ عَلَيْنَا جَمْعَهُ وَقُرْآنَهُ). وفي طه 114: (وَلَا تَعْجَلْ بِالْقُرْآنِ مِن قَبْلِ أَن يُقْضَىٰ إِلَيْكَ وَحْيُهُ).",
-    "explanation": "كان النبي ﷺ يحرك لسانه مع جبريل مخافة أن ينسى، فطمأنه الله بأن حفظه وجمعه في صدره متكفل به.",
-    "isKidsRecommended": true
-  },
-  {
-    "id": "insan-3-shakiran-kafoora",
-    "surahNumber": 76,
-    "surahName": "الإنسان",
-    "ayahNumber": 3,
-    "questionType": "single_word",
-    "verseSnippet": "إِنَّا هَدَيْنَاهُ السَّبِيلَ إِمَّا [___] وَإِمَّا كَفُورًا",
-    "fullVerseArabic": "إِنَّا هَدَيْنَاهُ السَّبِيلَ إِمَّا شَاكِرًا وَإِمَّا كَفُورًا",
-    "comparisonSurahNumber": 90,
-    "comparisonSurahName": "البلد",
-    "comparisonAyahNumber": 10,
-    "comparisonVerseArabic": "وَهَدَيْنَاهُ النَّجْدَيْنِ",
-    "prompt": "تقسيم حال الإنسان بعد هداية السبيل في سورة الإنسان 3: ما القسيم الأول؟",
-    "promptArabic": "تقسيم حال الإنسان بعد الهداية في سورة الإنسان 3: ما اللفظ المقابل لـ (كَفُورًا)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "شَاكِرًا (اسم فاعل شاكراً)",
-        "isCorrect": true,
-        "highlightPart": "شَاكِرًا"
-      },
-      {
-        "id": "opt-2",
-        "text": "شَكُورًا (بصيغة المبالغة شكوراً)",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الإنسان 3: (إِمَّا شَاكِرًا وَإِمَّا كَفُورًا). جاء الشكر باسم الفاعل (شاكراً) لأن الشاكرين قليل، والكفران بصيغة المبالغة (كفوراً) لغلبة الجحود على المنحرفين.",
-    "explanation": "لطيفة بلاغية: لم يقل شكوراً بل قال شاكراً مصداقاً لقوله: (وقليل من عبادي الشكور).",
-    "isKidsRecommended": true
-  },
-  {
     "id": "mursalat-15-waylun-yawmaidhin",
     "surahNumber": 77,
     "surahName": "المرسلات",
@@ -3327,38 +3071,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     ],
     "exactDifferenceNote": "التناغم في الفجر: (يُعَذِّبُ عَذَابَهُ) يقابلها في الآية التالية (يُوثِقُ وَثَاقَهُ).",
     "explanation": "اشتقاق المصدر من لفظ فعله: عذابه من يعذّب، ووثاقه من يوثق.",
-    "isKidsRecommended": true
-  },
-  {
-    "id": "balad-1-la-uqsimu",
-    "surahNumber": 90,
-    "surahName": "البلد",
-    "ayahNumber": 2,
-    "questionType": "single_word",
-    "verseSnippet": "لَا أُقْسِمُ بِهَٰذَا الْبَلَدِ (1) * وَأَنْتَ [___] بِهَٰذَا الْبَلَدِ (2)",
-    "fullVerseArabic": "وَأَنْتَ حِلٌّ بِهَٰذَا الْبَلَدِ",
-    "comparisonSurahNumber": 95,
-    "comparisonSurahName": "التين",
-    "comparisonAyahNumber": 3,
-    "comparisonVerseArabic": "وَهَٰذَا الْبَلَدِ الْأَمِينِ",
-    "prompt": "وصف إقامة النبي ﷺ في مكة بسورة البلد: ما الكلمة في الآية 2؟",
-    "promptArabic": "وصف مكة في سورة البلد الآية 2: ما اللفظ بعد (وَأَنْتَ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "حِلٌّ (بكسر الحاء وتشديد اللام)",
-        "isCorrect": true,
-        "highlightPart": "حِلٌّ"
-      },
-      {
-        "id": "opt-2",
-        "text": "مُقِيمٌ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في البلد 2: (وَأَنتَ حِلٌّ بِهَٰذَا الْبَلَدِ) أي مقيم بها أو حلال لك ما تصنع يوم فتحها.",
-    "explanation": "تشريف البلد الحرام بحلول النبي ﷺ فيه وإقامته ببطاحه المباركة.",
     "isKidsRecommended": true
   },
   {
@@ -3746,38 +3458,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "asr-2-3-lafee-khusr",
-    "surahNumber": 103,
-    "surahName": "العصر",
-    "ayahNumber": 2,
-    "questionType": "phrase_diff",
-    "verseSnippet": "وَالْعَصْرِ (1) * إِنَّ الْإِنْسَانَ [___] (2) * إِلَّا الَّذِينَ آمَنُوا وَعَمِلُوا الصَّالِحَاتِ وَتَوَاصَوْا بِالْحَقِّ وَتَوَاصَوْا بِالصَّبْرِ (3)",
-    "fullVerseArabic": "إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ",
-    "comparisonSurahNumber": 103,
-    "comparisonSurahName": "العصر",
-    "comparisonAyahNumber": 2,
-    "comparisonVerseArabic": "إِنَّ الْإِنْسَانَ لَفِي خُسْرٍ",
-    "prompt": "جواب القسم في سورة العصر الآية 2: ما اللفظ التام؟",
-    "promptArabic": "جواب القسم في سورة العصر الآية 2: ما اللفظ القرآني الصريح؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "لَفِي خُسْرٍ (باللام المزحلقة وخسر منون)",
-        "isCorrect": true,
-        "highlightPart": "لَفِي خُسْرٍ"
-      },
-      {
-        "id": "opt-2",
-        "text": "فِي خُسْرَانٍ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في العصر 2: (إِنَّ الْإِنسَانَ لَفِي خُسْرٍ). قال الإمام الشافعي: «لو ما أنزل الله حجة على خلقه إلا هذه السورة لكفتهم».",
-    "explanation": "استثناء أركان النجاة الأربعة: الإيمان، والعمل الصالح، والتواصي بالحق، والتواصي بالصبر.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "humazah-1-waylun-likulli",
     "surahNumber": 104,
     "surahName": "الهمزة",
@@ -3874,38 +3554,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "maun-an-salatihim-letter",
-    "surahNumber": 107,
-    "surahName": "الماعون",
-    "ayahNumber": 5,
-    "questionType": "single_letter",
-    "verseSnippet": "فَوَيْلٌ لِلْمُصَلِّينَ * الَّذِينَ هُمْ [___] صَلَاتِهِمْ سَاهُونَ",
-    "fullVerseArabic": "الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
-    "comparisonSurahNumber": 107,
-    "comparisonSurahName": "الماعون",
-    "comparisonAyahNumber": 5,
-    "comparisonVerseArabic": "الَّذِينَ هُمْ عَنْ صَلَاتِهِمْ سَاهُونَ",
-    "prompt": "حرف الجر الدقيق: هل حرف الجر (عَنْ) أم (فِي) في سورة الماعون؟",
-    "promptArabic": "دقة حرف الجر في سورة الماعون: هل قال الله (عَنْ صَلَاتِهِمْ) أم (فِي صَلَاتِهِمْ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "عَنْ",
-        "isCorrect": true,
-        "highlightPart": "الماعون 5"
-      },
-      {
-        "id": "opt-2",
-        "text": "فِي",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الماعون: حرف الجر (عَنْ) وليس (فِي). قال ابن عباس رضي الله عنه: «الحمد لله الذي قال عن صلاتهم ساهون ولم يقل في صلاتهم ساهون».",
-    "explanation": "السهو (عن) الصلاة هو تركها وتأخيرها عن وقتها، أما السهو (في) الصلاة فيقع من كل إنسان وسجد له النبي ﷺ سجود السهو.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "kawthar-2-fasalli-lirabbika",
     "surahNumber": 108,
     "surahName": "الكوثر",
@@ -3999,38 +3647,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     ],
     "exactDifferenceNote": "الفرق حرف واحد (فاء وليس زاياً): (أَفْوَاجًا) أي جماعات وقبائل متتابعة.",
     "explanation": "أفواجاً جمع فوج وهي الجماعة العظيمة، دخل الناس في دين الله جماعات بعد فتح مكة.",
-    "isKidsRecommended": true
-  },
-  {
-    "id": "masad-1-tabbat-yadaa",
-    "surahNumber": 111,
-    "surahName": "المسد",
-    "ayahNumber": 1,
-    "questionType": "single_word",
-    "verseSnippet": "تَبَّتْ يَدَا أَبِي لَهَبٍ [___] (1) * مَا أَغْنَىٰ عَنْهُ مَالُهُ وَمَا كَسَبَ (2)",
-    "fullVerseArabic": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
-    "comparisonSurahNumber": 111,
-    "comparisonSurahName": "المسد",
-    "comparisonAyahNumber": 1,
-    "comparisonVerseArabic": "تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ",
-    "prompt": "خاتمة الآية الأولى من سورة المسد: ما الكلمة بعد (أَبِي لَهَبٍ)؟",
-    "promptArabic": "خاتمة الآية 1 من سورة المسد: ما اللفظ القرآني بعد (أَبِي لَهَبٍ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "وَتَبَّ (دعاء في الأولى وتحقق الخسران في الثانية)",
-        "isCorrect": true,
-        "highlightPart": "وَتَبَّ"
-      },
-      {
-        "id": "opt-2",
-        "text": "وَهَلَكَ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في المسد 1: (تَبَّتْ يَدَا أَبِي لَهَبٍ وَتَبَّ). الأولى دعاء بالتباب (الخسران والهلاك)، والثانية إخبار بتحققه ووقوعه.",
-    "explanation": "التباب هو الخسران المستمر والهلاك الذي لا جبر له.",
     "isKidsRecommended": true
   },
   {
@@ -5090,82 +4706,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "anam-12-anam-20-allatheena-khasiroo",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 12,
-    "questionType": "phrase_diff",
-    "verseSnippet": "قُل لِّمَن مَّا فِي السَّمَاوَاتِ وَالْأَرْضِ قُل لِّلَّهِ كَتَبَ عَلَىٰ نَفْسِهِ الرَّحْمَةَ لَيَجْمَعَنَّكُمْ إِلَىٰ يَوْمِ الْقِيَامَةِ لَا رَيْبَ فِيهِ [___]",
-    "fullVerseArabic": "الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 20,
-    "comparisonVerseArabic": "الَّذِينَ آتَيْنَاهُمُ الْكِتَابَ يَعْرِفُونَهُ كَمَا يَعْرِفُونَ أَبْنَاءَهُمُ الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ",
-    "prompt": "موضع (الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ) تكرر مرتين في الأنعام: في الآيتين 12 و 20",
-    "promptArabic": "ختام الآية 12 والآية 20 في سورة الأنعام: ما العبارة المشتركة المتطابقة بينهما؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ",
-        "isCorrect": true,
-        "highlightPart": "الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ"
-      },
-      {
-        "id": "opt-2",
-        "text": "الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ كَافِرُونَ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      },
-      {
-        "id": "opt-3",
-        "text": "فَأُولَٰئِكَ هُمُ الْخَاسِرُونَ",
-        "isCorrect": false,
-        "highlightPart": "في مواضع أخرى"
-      }
-    ],
-    "exactDifferenceNote": "تكررت جملة (الَّذِينَ خَسِرُوا أَنفُسَهُمْ فَهُمْ لَا يُؤْمِنُونَ) حرفياً مرتين في الربع الأول من سورة الأنعام في ختام الآية 12 وختام الآية 20.",
-    "explanation": "ضابط الحفظ: تثبيت خاتمة الآية 12 والآية 20 بعبارة واحدة متطابقة تربط بين مصير المعاندين وعدم إيمانهم.",
-    "isKidsRecommended": true
-  },
-  {
-    "id": "anam-38-dabbah-internal",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 38,
-    "questionType": "single_letter",
-    "verseSnippet": "وَمَا مِن دَابَّةٍ فِي الْأَرْضِ [___] يَطِيرُ بِجَنَاحَيْهِ إِلَّا أُمَمٌ أَمْثَالُكُم",
-    "fullVerseArabic": "وَمَا مِن دَابَّةٍ فِي الْأَرْضِ وَلَا طَائِرٍ يَطِيرُ بِجَنَاحَيْهِ إِلَّا أُمَمٌ أَمْثَالُكُم مَّا فَرَّطْنَا فِي الْكِتَابِ مِن شَيْءٍ ثُمَّ إِلَىٰ رَبِّهِمْ يُحْشَرُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 38,
-    "comparisonVerseArabic": "وَلَا طَائِرٍ يَطِيرُ بِجَنَاحَيْهِ",
-    "prompt": "دقة حرف العطف في الآية 38 من سورة الأنعام: هل وردت بالواو (وَلَا طَائِرٍ) أم بدون واو؟",
-    "promptArabic": "في سورة الأنعام الآية 38: هل اللفظ بعد (فِي الْأَرْضِ) هو (وَلَا طَائِرٍ) بالواو أم (أَوْ طَائِرٍ) أم (لَا طَائِرٍ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "وَلَا طَائِرٍ (بالواو ولا النافية)",
-        "isCorrect": true,
-        "highlightPart": "وَلَا طَائِرٍ"
-      },
-      {
-        "id": "opt-2",
-        "text": "أَوْ طَائِرٍ (بأو)",
-        "isCorrect": false,
-        "highlightPart": "غير وارد في القرآن"
-      },
-      {
-        "id": "opt-3",
-        "text": "طَائِرٍ (بدون نفي)",
-        "isCorrect": false,
-        "highlightPart": "غير صحيح"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 38: (وَمَا مِن دَابَّةٍ فِي الْأَرْضِ وَلَا طَائِرٍ يَطِيرُ بِجَنَاحَيْهِ إِلَّا أُمَمٌ أَمْثَالُكُم).",
-    "explanation": "ضابط الحفظ: عطف العام على الخاص بالواو وزيادة (لا) لتأكيد استغراق الجنس وشمول كل المخلوقات.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "anam-40-anam-47-ara-aytakum",
     "surahNumber": 6,
     "surahName": "الأنعام",
@@ -5198,41 +4738,35 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "anam-44-anam-47-baghtatan-internal",
+    "id": "anam-44-araf-95-baghtatan",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 44,
     "questionType": "sequence_order",
     "verseSnippet": "فَلَمَّا نَسُوا مَا ذُكِّرُوا بِهِ فَتَحْنَا عَلَيْهِمْ أَبْوَابَ كُلِّ شَيْءٍ حَتَّىٰ إِذَا فَرِحُوا بِمَا أُوتُوا [___]",
     "fullVerseArabic": "أَخَذْنَاهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 47,
-    "comparisonVerseArabic": "قُلْ أَرَأَيْتَكُمْ إِنْ أَتَاكُمْ عَذَابُ اللَّهِ بَغْتَةً أَوْ جَهْرَةً هَلْ يُهْلَكُ إِلَّا الْقَوْمُ الظَّالِمُونَ",
-    "prompt": "لفظ الفجأة داخل سورة الأنعام بين الآية 44 والآية 47: ما هو لفظ الأخذ في الآية 44؟",
-    "promptArabic": "في سورة الأنعام الآية 44: ما اللفظ المقترن بالأخذ بعد الاستدراج؟",
+    "comparisonSurahNumber": 7,
+    "comparisonSurahName": "الأعراف",
+    "comparisonAyahNumber": 95,
+    "comparisonVerseArabic": "ثُمَّ بَدَّلْنَا مَكَانَ السَّيِّئَةِ الْحَسَنَةَ حَتَّىٰ عَفَوا وَّقَالُوا قَدْ مَسَّ آبَاءَنَا الضَّرَّاءُ وَالسَّرَّاءُ فَأَخَذْنَاهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ",
+    "prompt": "مقارنة بين الأنعام 44 والأعراف 95 في ختام الأخذ بعد الاستدراج",
+    "promptArabic": "في سورة الأنعام الآية 44: ما اللفظ القرآني المقترن بالأخذ بغتة: (حَتَّىٰ إِذَا فَرِحُوا بِمَا أُوتُوا [___])؟",
     "options": [
       {
         "id": "opt-1",
         "text": "أَخَذْنَاهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ",
         "isCorrect": true,
-        "highlightPart": "الأنعام 44"
+        "highlightPart": "الأنعام 44: فَإِذَا هُم مُّبْلِسُونَ"
       },
       {
         "id": "opt-2",
         "text": "أَخَذْنَاهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ",
         "isCorrect": false,
-        "highlightPart": "الأعراف 95"
-      },
-      {
-        "id": "opt-3",
-        "text": "أَخَذْنَاهُمْ جَهْرَةً",
-        "isCorrect": false,
-        "highlightPart": "النساء 153"
+        "highlightPart": "الأعراف 95: وَهُمْ لَا يَشْعُرُونَ"
       }
     ],
-    "exactDifferenceNote": "في الأنعام 44: (أَخَذْنَاهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ) وعقبها بقطع دابر القوم الظالمين.",
-    "explanation": "ضابط الحفظ داخل الأنعام: ارتباط الأخذ بغتة بـ (الإبلاس) وهو الحيرة واليأس التام: (فإذا هم مبلسون).",
+    "exactDifferenceNote": "في الأنعام 44: (أَخَذْنَاهُم بَغْتَةً فَإِذَا هُم مُّبْلِسُونَ). وفي الأعراف 95: (فَأَخَذْنَاهُم بَغْتَةً وَهُمْ لَا يَشْعُرُونَ).",
+    "explanation": "ضابط الحفظ بين السورتين: في الأنعام بعد فتح الأبواب والفرح أبلسوا ويئسوا (فإذا هم مبلسون)، وفي الأعراف بعد تبديل السيئة بالحسنة اغتروا ولم يشعروا (وهم لا يشعرون).",
     "isKidsRecommended": false
   },
   {
@@ -5240,76 +4774,32 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 45,
-    "questionType": "ayah_ending",
-    "verseSnippet": "فَقُطِعَ دَابِرُ الْقَوْمِ الَّذِينَ ظَلَمُوا [___]",
-    "fullVerseArabic": "وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+    "questionType": "phrase_diff",
+    "verseSnippet": "فَقُطِعَ دَابِرُ [___]",
+    "fullVerseArabic": "فَقُطِعَ دَابِرُ الْقَوْمِ الَّذِينَ ظَلَمُوا ۚ وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
     "comparisonSurahNumber": 6,
     "comparisonSurahName": "الأنعام",
     "comparisonAyahNumber": 47,
     "comparisonVerseArabic": "قُلْ أَرَأَيْتَكُمْ إِنْ أَتَاكُمْ عَذَابُ اللَّهِ بَغْتَةً أَوْ جَهْرَةً هَلْ يُهْلَكُ إِلَّا الْقَوْمُ الظَّالِمُونَ",
-    "prompt": "ما خاتمة الآية 45 في سورة الأنعام بعد هلاك المكذبين؟",
-    "promptArabic": "ما خاتمة الآية 45 في سورة الأنعام بعد قوله تعالى: (فَقُطِعَ دَابِرُ الْقَوْمِ الَّذِينَ ظَلَمُوا)؟",
+    "prompt": "متشابه داخلي في سورة الأنعام بين الآية 45 والآية 47 في وصف القوم الظالمين",
+    "promptArabic": "متشابه داخلي في سورة الأنعام: في الآية 45، كيف وصف الله القوم بعد قطع دابرهم؟",
     "options": [
       {
         "id": "opt-1",
-        "text": "وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ",
+        "text": "الْقَوْمِ الَّذِينَ ظَلَمُوا",
         "isCorrect": true,
-        "highlightPart": "وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ"
+        "highlightPart": "الأنعام 45: الَّذِينَ ظَلَمُوا"
       },
       {
         "id": "opt-2",
-        "text": "إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ",
+        "text": "الْقَوْمُ الظَّالِمُونَ",
         "isCorrect": false,
-        "highlightPart": "في ختام الأنعام 165"
-      },
-      {
-        "id": "opt-3",
-        "text": "فَمَا بَكَتْ عَلَيْهِمُ السَّمَاءُ وَالْأَرْضُ",
-        "isCorrect": false,
-        "highlightPart": "في سورة الدخان"
+        "highlightPart": "الأنعام 47: الْقَوْمُ الظَّالِمُونَ"
       }
     ],
-    "exactDifferenceNote": "في الأنعام 45: ختمت بحمد الله على استئصال الظلمة: (فَقُطِعَ دَابِرُ الْقَوْمِ الَّذِينَ ظَلَمُوا وَالْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ).",
-    "explanation": "ضابط الحفظ: حمد الله سبحانه وتعالى مشروع ومستحب عند هلاك الظالمين وقطع دابرهم.",
+    "exactDifferenceNote": "في الأنعام 45: (فَقُطِعَ دَابِرُ الْقَوْمِ الَّذِينَ ظَلَمُوا). وفي الأنعام 47: (هَلْ يُهْلَكُ إِلَّا الْقَوْمُ الظَّالِمُونَ).",
+    "explanation": "ضابط الحفظ داخل الأنعام: في 45 جاءت موصولة بالاسم الموصول (الَّذِينَ ظَلَمُوا)، وفي 47 بالوصف الصريح فاعلاً (الْقَوْمُ الظَّالِمُونَ).",
     "isKidsRecommended": true
-  },
-  {
-    "id": "anam-46-anam-65-sarrafna-internal",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 46,
-    "questionType": "phrase_diff",
-    "verseSnippet": "قُلْ أَرَأَيْتُمْ إِنْ أَخَذَ اللَّهُ سَمْعَكُمْ وَأَبْصَارَكُمْ وَخَتَمَ عَلَىٰ قُلُوبِكُم مَّنْ إِلَٰهٌ غَيْرُ اللَّهِ يَأْتِيكُم بِهِ انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ [___]",
-    "fullVerseArabic": "انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ ثُمَّ هُمْ يَصْدِفُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 65,
-    "comparisonVerseArabic": "انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ لَعَلَّهُمْ يَفْقَهُونَ",
-    "prompt": "متشابه داخلي في سورة الأنعام في خاتمة (انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ): ما الفاصلة في الآية 46؟",
-    "promptArabic": "متشابه داخلي في سورة الأنعام: في الآية 46، ما التكملة الدقيقة لقوله: (انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "ثُمَّ هُمْ يَصْدِفُونَ",
-        "isCorrect": true,
-        "highlightPart": "ثُمَّ هُمْ يَصْدِفُونَ"
-      },
-      {
-        "id": "opt-2",
-        "text": "لَعَلَّهُمْ يَفْقَهُونَ",
-        "isCorrect": false,
-        "highlightPart": "في الآية 65"
-      },
-      {
-        "id": "opt-3",
-        "text": "لَعَلَّهُمْ يَتَذَكَّرُونَ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد هنا"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 46: (انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ ثُمَّ هُمْ يَصْدِفُونَ). وفي الأنعام 65: (انظُرْ كَيْفَ نُصَرِّفُ الْآيَاتِ لَعَلَّهُمْ يَفْقَهُونَ).",
-    "explanation": "ضابط الحفظ داخل الأنعام: تصريف الآيات في الآية 46 بعد ذكر ختم السمع والأبصار يناسبه الصدود والإعراض (يصدفون)، بينما في 65 بعد ذكر عذاب الفتن يناسبه التفهيم (لعلهم يفقهون).",
-    "isKidsRecommended": false
   },
   {
     "id": "anam-54-anam-12-kataba-rahmah",
@@ -5344,44 +4834,6 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "anam-59-mafateeh-al-ghayb",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 59,
-    "questionType": "single_word",
-    "verseSnippet": "وَعِندَهُ مَفَاتِحُ الْغَيْبِ لَا يَعْلَمُهَا إِلَّا هُوَ وَيَعْلَمُ مَا فِي الْبَرِّ وَالْبَحْرِ وَمَا تَسْقُطُ مِن وَرَقَةٍ إِلَّا يَعْلَمُهَا وَلَا حَبَّةٍ فِي ظُلُمَاتِ الْأَرْضِ وَلَا رَطْبٍ وَلَا يَابِسٍ [___]",
-    "fullVerseArabic": "إِلَّا فِي كِتَابٍ مُّبِينٍ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 59,
-    "comparisonVerseArabic": "وَعِندَهُ مَفَاتِحُ الْغَيْبِ لَا يَعْلَمُهَا إِلَّا هُوَ",
-    "prompt": "ما خاتمة الآية 59 العظيمة في سورة الأنعام؟",
-    "promptArabic": "ما خاتمة الآية 59 في سورة الأنعام بعد قوله: (وَلَا رَطْبٍ وَلَا يَابِسٍ)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "إِلَّا فِي كِتَابٍ مُّبِينٍ",
-        "isCorrect": true,
-        "highlightPart": "إِلَّا فِي كِتَابٍ مُّبِينٍ"
-      },
-      {
-        "id": "opt-2",
-        "text": "إِلَّا بِإِذْنِهِ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد هنا"
-      },
-      {
-        "id": "opt-3",
-        "text": "إِنَّ اللَّهَ بِكُلِّ شَيْءٍ عَلِيمٌ",
-        "isCorrect": false,
-        "highlightPart": "خاتمة سور أخرى"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 59: (وَلَا حَبَّةٍ فِي ظُلُمَاتِ الْأَرْضِ وَلَا رَطْبٍ وَلَا يَابِسٍ إِلَّا فِي كِتَابٍ مُّبِينٍ).",
-    "explanation": "ضابط الحفظ: إحاطة علم الله وكتابته لكل ذرة ورطب ويابس في اللوح المحفوظ المقيد بالكتاب المبين.",
-    "isKidsRecommended": true
-  },
-  {
     "id": "anam-71-anam-162-rabbi-al-alameen",
     "surahNumber": 6,
     "surahName": "الأنعام",
@@ -5414,75 +4866,31 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": false
   },
   {
-    "id": "anam-73-qawluhu-alhaqq",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 73,
-    "questionType": "sequence_order",
-    "verseSnippet": "وَهُوَ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ بِالْحَقِّ وَيَوْمَ يَقُولُ كُن فَيَكُونُ ۚ [___] يَوْمَ يُنفَخُ فِي الصُّورِ",
-    "fullVerseArabic": "قَوْلُهُ الْحَقُّ وَلَهُ الْمُلْكُ يَوْمَ يُنفَخُ فِي الصُّورِ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 73,
-    "comparisonVerseArabic": "قَوْلُهُ الْحَقُّ وَلَهُ الْمُلْكُ",
-    "prompt": "ما العبارة التامة في الآية 73 من سورة الأنعام؟",
-    "promptArabic": "في سورة الأنعام الآية 73: بعد (كُن فَيَكُونُ) ما التكملة الدقيقة؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "قَوْلُهُ الْحَقُّ وَلَهُ الْمُلْكُ",
-        "isCorrect": true,
-        "highlightPart": "الأنعام 73"
-      },
-      {
-        "id": "opt-2",
-        "text": "إِنَّ قَوْلَهُ الْحَقُّ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      },
-      {
-        "id": "opt-3",
-        "text": "وَلَهُ الْمُلْكُ",
-        "isCorrect": false,
-        "highlightPart": "بدون قوله الحق"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 73: (قَوْلُهُ الْحَقُّ وَلَهُ الْمُلْكُ يَوْمَ يُنفَخُ فِي الصُّورِ عَالِمُ الْغَيْبِ وَالشَّهَادَةِ وَهُوَ الْحَكِيمُ الْخَبِيرُ).",
-    "explanation": "ضابط الحفظ: إفراد (قَوْلُهُ الْحَقُّ) كمبتدأ وخبر يؤكد نفاذ أمره التكويني (كن فيكون).",
-    "isKidsRecommended": false
-  },
-  {
-    "id": "anam-82-al-amnu-internal",
+    "id": "anam-82-baqarah-5-al-amnu",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 82,
     "questionType": "phrase_diff",
     "verseSnippet": "الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُم بِظُلْمٍ [___]",
     "fullVerseArabic": "أُولَٰئِكَ لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 81,
-    "comparisonVerseArabic": "فَأَيُّ الْفَرِيقَيْنِ أَحَقُّ بِالْأَمْنِ إِن كُنتُمْ تَعْلَمُونَ",
-    "prompt": "ما جواب الاستفهام المطروح في الآية 81 من سورة الأنعام كما جاء في الآية 82؟",
-    "promptArabic": "في سورة الأنعام الآية 82: ما اللفظ الدقيق لقوله تعالى: (الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُم بِظُلْمٍ ...)؟",
+    "comparisonSurahNumber": 2,
+    "comparisonSurahName": "البقرة",
+    "comparisonAyahNumber": 5,
+    "comparisonVerseArabic": "أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
+    "prompt": "مقارنة بين خاتمة الأنعام 82 والبقرة 5 في وصف المهتدين",
+    "promptArabic": "في سورة الأنعام الآية 82: ما اللفظ القرآني لقوله تعالى: (الَّذِينَ آمَنُوا وَلَمْ يَلْبِسُوا إِيمَانَهُم بِظُلْمٍ [___])؟",
     "options": [
       {
         "id": "opt-1",
         "text": "أُولَٰئِكَ لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ",
         "isCorrect": true,
-        "highlightPart": "الأنعام 82"
+        "highlightPart": "الأنعام 82: لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ"
       },
       {
         "id": "opt-2",
-        "text": "أُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
+        "text": "أُولَٰئِكَ عَلَىٰ هُدًى مِّن رَّبِّهِمْ ۖ وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ",
         "isCorrect": false,
-        "highlightPart": "البقرة 5"
-      },
-      {
-        "id": "opt-3",
-        "text": "أُولَٰئِكَ هُمُ الْفَائِزُونَ",
-        "isCorrect": false,
-        "highlightPart": "آل عمران 104"
+        "highlightPart": "البقرة 5: وَأُولَٰئِكَ هُمُ الْمُفْلِحُونَ"
       }
     ],
     "exactDifferenceNote": "في الأنعام 82: جواب لسؤال إبراهيم عليه السلام في 81 (فَأَيُّ الْفَرِيقَيْنِ أَحَقُّ بِالْأَمْنِ)، فكان الجواب الإلهي: (أُولَٰئِكَ لَهُمُ الْأَمْنُ وَهُم مُّهْتَدُونَ).",
@@ -5490,111 +4898,35 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "anam-90-iqtadih-internal",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 90,
-    "questionType": "single_letter",
-    "verseSnippet": "أُولَٰئِكَ الَّذِينَ هَدَى اللَّهُ فَبِهُدَاهُمُ [___] قُل لَّا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا",
-    "fullVerseArabic": "فَبِهُدَاهُمُ اقْتَدِهْ قُل لَّا أَسْأَلُكُمْ عَلَيْهِ أَجْرًا إِنْ هُوَ إِلَّا ذِكْرَىٰ لِلْعَالَمِينَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 90,
-    "comparisonVerseArabic": "فَبِهُدَاهُمُ اقْتَدِهْ",
-    "prompt": "دقة الهاء الساكتة في الآية 90 من سورة الأنعام",
-    "promptArabic": "في سورة الأنعام الآية 90: ما الضبط القرآني لكلمة الاقتداء في قوله تعالى: (فَبِهُدَاهُمُ ...)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "اقْتَدِهْ (بهاء السكت الساكنة وصلاً ووقفاً لحفص)",
-        "isCorrect": true,
-        "highlightPart": "اقْتَدِهْ"
-      },
-      {
-        "id": "opt-2",
-        "text": "اقْتَدِ (بحذف الهاء)",
-        "isCorrect": false,
-        "highlightPart": "غير وارد برواية حفص"
-      }
-    ],
-    "exactDifferenceNote": "انفردت سورة الأنعام 90 بكلمة (اقْتَدِهْ) بهاء السكت الثابتة رسماً ووقفاً ووصلاً في رواية حفص عن عاصم.",
-    "explanation": "ضابط التلاوة والرسم: هاء السكت في (اقتده) لحفظ حركة الكسرة على الدال عند الوقف والوصل.",
-    "isKidsRecommended": false
-  },
-  {
-    "id": "anam-91-anam-154-tamaman-internal",
+    "id": "anam-91-tur-45-dharhum",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 91,
     "questionType": "single_word",
     "verseSnippet": "وَمَا قَدَرُوا اللَّهَ حَقَّ قَدْرِهِ ... وَعُلِّمْتُم مَّا لَمْ تَعْلَمُوا أَنتُمْ وَلَا آبَاؤُكُمْ ۖ [___]",
-    "fullVerseArabic": "تَجْعَلُونَهُ قَرَاطِيسَ تُبْدُونَهَا وَتُخْفُونَ كَثِيرًا وَعُلِّمْتُم مَّا لَمْ تَعْلَمُوا أَنتُمْ وَلَا آبَاؤُكُمْ قُلِ اللَّهُ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 91,
-    "comparisonVerseArabic": "قُلِ اللَّهُ ثُمَّ ذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ",
-    "prompt": "ما الأمر النبوي الجازم في الآية 91 من سورة الأنعام بعد تفنيد شبهاتهم؟",
-    "promptArabic": "في سورة الأنعام الآية 91: ماذا يقول النبي ﷺ بعد ذكر التوراة: (قُلِ اللَّهُ ثُمَّ ذَرْهُمْ ...)؟",
+    "fullVerseArabic": "قُلِ اللَّهُ ۖ ثُمَّ ذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ",
+    "comparisonSurahNumber": 52,
+    "comparisonSurahName": "الطور",
+    "comparisonAyahNumber": 45,
+    "comparisonVerseArabic": "فَذَرْهُمْ حَتَّىٰ يُلَاقُوا يَوْمَهُمُ الَّذِي فِيهِ يُصْعَقُونَ",
+    "prompt": "مقارنة بين الأنعام 91 والطور 45 في صيغة الأمر (ذَرْهُمْ)",
+    "promptArabic": "في سورة الأنعام الآية 91: ماذا يقول النبي ﷺ بعد تفنيد ادعاءاتهم في التوراة: [___]؟",
     "options": [
       {
         "id": "opt-1",
         "text": "قُلِ اللَّهُ ۖ ثُمَّ ذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ",
         "isCorrect": true,
-        "highlightPart": "الأنعام 91"
+        "highlightPart": "الأنعام 91: قُلِ اللَّهُ ۖ ثُمَّ ذَرْهُمْ"
       },
       {
         "id": "opt-2",
         "text": "فَذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ",
         "isCorrect": false,
-        "highlightPart": "الطور 45 والمعارج 42"
-      },
-      {
-        "id": "opt-3",
-        "text": "قُلْ فَأْتُوا بِكِتَابٍ مِّنْ عِندِ اللَّهِ",
-        "isCorrect": false,
-        "highlightPart": "القصص 49"
+        "highlightPart": "الطور والمعارج: فَذَرْهُمْ"
       }
     ],
-    "exactDifferenceNote": "في الأنعام 91: (قُلِ اللَّهُ ثُمَّ ذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ) بلفظ (ثُمَّ ذَرْهُمْ) بالترتيب مع قُلِ اللَّهُ.",
+    "exactDifferenceNote": "في الأنعام 91: (قُلِ اللَّهُ ثُمَّ ذَرْهُمْ فِي خَوْضِهِمْ يَلْعَبُونَ) بلفظ (ثُمَّ ذَرْهُمْ) مقترناً بالأمر قُلِ اللَّهُ.",
     "explanation": "ضابط الحفظ: الانفراد بـ (قُلِ اللَّهُ ثُمَّ ذَرْهُمْ) كجواب فوري وحاسم لادعاءاتهم الباطلة.",
-    "isKidsRecommended": true
-  },
-  {
-    "id": "anam-96-anam-97-al-aleem-internal",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 96,
-    "questionType": "ayah_ending",
-    "verseSnippet": "فَالِقُ الْإِصْبَاحِ وَجَعَلَ اللَّيْلَ سَكَنًا وَالشَّمْسَ وَالْقَمَرَ حُسْبَانًا [___]",
-    "fullVerseArabic": "ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 97,
-    "comparisonVerseArabic": "وَهُوَ الَّذِي جَعَلَ لَكُمُ النُّجُومَ لِتَهْتَدُوا بِهَا فِي ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَعْلَمُونَ",
-    "prompt": "ما خاتمة الآية 96 في سورة الأنعام بعد ذكر الشمس والقمر حُسباناً؟",
-    "promptArabic": "في سورة الأنعام الآية 96: ما الفاصلة القرآنية لقوله تعالى: (وَجَعَلَ اللَّيْلَ سَكَنًا وَالشَّمْسَ وَالْقَمَرَ حُسْبَانًا)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ",
-        "isCorrect": true,
-        "highlightPart": "ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ"
-      },
-      {
-        "id": "opt-2",
-        "text": "قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَعْلَمُونَ",
-        "isCorrect": false,
-        "highlightPart": "في الآية 97 تلتها مباشرة"
-      },
-      {
-        "id": "opt-3",
-        "text": "وَهُوَ الْعَزِيزُ الْحَكِيمُ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 96: (ذَٰلِكَ تَقْدِيرُ الْعَزِيزِ الْعَلِيمِ)، ثم في 97: (قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَعْلَمُونَ)، ثم في 98: (لِقَوْمٍ يَفْقَهُونَ).",
-    "explanation": "ضابط الحفظ الداخلي: تدرج الفواصل الكونية في ربع الأنعام: 96 (العزيز العليم) -> 97 (يعلمون) -> 98 (يفقهون).",
     "isKidsRecommended": true
   },
   {
@@ -5654,101 +4986,20 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
         "id": "opt-1",
         "text": "وَمَا أَنتَ عَلَيْهِم بِوَكِيلٍ",
         "isCorrect": true,
-        "highlightPart": "وَمَا أَنتَ عَلَيْهِم بِوَكِيلٍ"
+        "highlightPart": "الأنعام 107"
       },
       {
         "id": "opt-2",
         "text": "وَمَا أَنَا عَلَيْكُم بِحَفِيظٍ",
         "isCorrect": false,
-        "highlightPart": "في الآية 104 السابقة"
-      },
-      {
-        "id": "opt-3",
-        "text": "فَأَعْرِضْ عَنْهُمْ",
-        "isCorrect": false,
-        "highlightPart": "في مواضع أخرى"
+        "highlightPart": "الأنعام 104"
       }
     ],
     "exactDifferenceNote": "في الأنعام 104: (وَمَا أَنَا عَلَيْكُم بِحَفِيظٍ). وفي الأنعام 107: (وَمَا جَعَلْنَاكَ عَلَيْهِمْ حَفِيظًا وَمَا أَنتَ عَلَيْهِم بِوَكِيلٍ).",
     "explanation": "ضابط الحفظ: نفي الحفظ أولاً في 104، ثم الجمع بين نفي الحفظ والوكالة معاً في 107.",
     "isKidsRecommended": false
   },
-  {
-    "id": "anam-116-fil-ardi-yudillooka",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 116,
-    "questionType": "ayah_ending",
-    "verseSnippet": "وَإِن تُطِعْ أَكْثَرَ مَن فِي الْأَرْضِ يُضِلُّوكَ عَن سَبِيلِ اللَّهِ إِن يَتَّبِعُونَ إِلَّا الظَّنَّ [___]",
-    "fullVerseArabic": "وَإِنْ هُمْ إِلَّا يَخْرُصُونَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 148,
-    "comparisonVerseArabic": "إِن تَتَّبِعُونَ إِلَّا الظَّنَّ وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ",
-    "prompt": "ما ختام الآية 116 في سورة الأنعام؟",
-    "promptArabic": "في سورة الأنعام الآية 116: ما خاتمة قوله تعالى: (إِن يَتَّبِعُونَ إِلَّا الظَّنَّ ...)؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "وَإِنْ هُمْ إِلَّا يَخْرُصُونَ",
-        "isCorrect": true,
-        "highlightPart": "وَإِنْ هُمْ إِلَّا يَخْرُصُونَ"
-      },
-      {
-        "id": "opt-2",
-        "text": "وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ",
-        "isCorrect": false,
-        "highlightPart": "في الآية 148 (خطاب للمشركين)"
-      },
-      {
-        "id": "opt-3",
-        "text": "وَمَا كَانُوا مُهْتَدِينَ",
-        "isCorrect": false,
-        "highlightPart": "في سورة يونس"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 116: ضمير الغيبة (وَإِنْ هُمْ إِلَّا يَخْرُصُونَ). وفي الأنعام 148: ضمير الخطاب المباشر (وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ).",
-    "explanation": "ضابط الحفظ الداخلي: الآية 116 حديث مع النبي عن أكثر أهل الأرض (غيبة: هم)، بينما في 148 محاجة مباشرة للمشركين (خطاب: أنتم).",
-    "isKidsRecommended": false
-  },
-  {
-    "id": "anam-121-anam-119-innahu-la-fisq",
-    "surahNumber": 6,
-    "surahName": "الأنعام",
-    "ayahNumber": 121,
-    "questionType": "single_word",
-    "verseSnippet": "وَلَا تَأْكُلُوا مِمَّا لَمْ يُذْكَرِ اسْمُ اللَّهِ عَلَيْهِ [___] وَإِنَّ الشَّيَاطِينَ لَيُوحُونَ إِلَىٰ أَوْلِيَائِهِمْ لِيُجَادِلُوكُمْ",
-    "fullVerseArabic": "وَإِنَّهُ لَفِسْقٌ وَإِنَّ الشَّيَاطِينَ لَيُوحُونَ إِلَىٰ أَوْلِيَائِهِمْ لِيُجَادِلُوكُمْ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 121,
-    "comparisonVerseArabic": "وَإِنَّهُ لَفِسْقٌ",
-    "prompt": "ما الجملة التأكيدية في الآية 121 من سورة الأنعام بعد النهي عن أكل الميتة؟",
-    "promptArabic": "في سورة الأنعام الآية 121: ما اللفظ بين النهي عن الأكل وجدال الشياطين؟",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "وَإِنَّهُ لَفِسْقٌ",
-        "isCorrect": true,
-        "highlightPart": "وَإِنَّهُ لَفِسْقٌ"
-      },
-      {
-        "id": "opt-2",
-        "text": "وَإِنَّهُ لَإِثْمٌ",
-        "isCorrect": false,
-        "highlightPart": "غير وارد"
-      },
-      {
-        "id": "opt-3",
-        "text": "ذَٰلِكُمْ فِسْقٌ",
-        "isCorrect": false,
-        "highlightPart": "في سورة المائدة 3"
-      }
-    ],
-    "exactDifferenceNote": "في الأنعام 121: (وَإِنَّهُ لَفِسْقٌ) بالضمير واللام المزحلقة. وفي المائدة 3: (ذَٰلِكُمْ فِسْقٌ) باسم الإشارة.",
-    "explanation": "ضابط الحفظ: الانفراد في الأنعام بالجملة الاسمية المؤكدة بإن واللام (وَإِنَّهُ لَفِسْقٌ).",
-    "isKidsRecommended": false
-  },
+
   {
     "id": "anam-128-anam-139-hakeemun-aleem",
     "surahNumber": 6,
@@ -5761,96 +5012,84 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "comparisonSurahName": "الأنعام",
     "comparisonAyahNumber": 139,
     "comparisonVerseArabic": "سَيَجْزِيهِمْ وَصْفَهُمْ إِنَّهُ حَكِيمٌ عَلِيمٌ",
-    "prompt": "ما خاتمة الآية 128 في سورة الأنعام؟",
-    "promptArabic": "في سورة الأنعام الآية 128: ما الفاصلة القرآنية لقوله: (إِلَّا مَا شَاءَ اللَّهُ ...)؟",
+    "prompt": "متشابه داخلي في سورة الأنعام: ما الفاصلة في الآية 128 مقارنة بالآية 139؟",
+    "promptArabic": "في سورة الأنعام الآية 128: هل الفاصلة (إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ) أم (إِنَّهُ حَكِيمٌ عَلِيمٌ)؟",
     "options": [
       {
         "id": "opt-1",
-        "text": "إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ (تقديم حكيم على عليم)",
+        "text": "إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ",
         "isCorrect": true,
-        "highlightPart": "حَكِيمٌ عَلِيمٌ"
+        "highlightPart": "الأنعام 128: بإظهار (رَبَّكَ)"
       },
       {
         "id": "opt-2",
-        "text": "إِنَّ رَبَّكَ عَلِيمٌ حَكِيمٌ (تقديم عليم على حكيم)",
+        "text": "إِنَّهُ حَكِيمٌ عَلِيمٌ",
         "isCorrect": false,
-        "highlightPart": "في سورة يوسف والحجر"
-      },
-      {
-        "id": "opt-3",
-        "text": "إِنَّ رَبَّكَ غَفُورٌ رَّحِيمٌ",
-        "isCorrect": false,
-        "highlightPart": "في الآية 145"
+        "highlightPart": "الأنعام 139: بضمير الغيبة (إِنَّهُ)"
       }
     ],
-    "exactDifferenceNote": "في الأنعام 128 و 139: قُدّم الحكيم على العليم: (إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ)، بينما في سورة يوسف قُدم العليم: (إِنَّ رَبَّكَ عَلِيمٌ حَكِيمٌ).",
-    "explanation": "قاعدة الضبط المشهورة: «حكيم عليم في الأنعام والحجر، وعليم حكيم في يوسف».",
+    "exactDifferenceNote": "في الأنعام 128: (إِنَّ رَبَّكَ حَكِيمٌ عَلِيمٌ) بذكر لفظ الرب. وفي الأنعام 139: (إِنَّهُ حَكِيمٌ عَلِيمٌ) بالضمير.",
+    "explanation": "ضابط الحفظ داخل الأنعام: الموضع الأول في 128 فُصّل فيه بذكر (ربك)، وفي الثاني في 139 أوجز بالضمير (إنه).",
     "isKidsRecommended": true
   },
   {
-    "id": "anam-141-kulu-min-samarihi",
+    "id": "anam-141-araf-31-kulu",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 141,
-    "questionType": "single_word",
+    "questionType": "phrase_diff",
     "verseSnippet": "وَهُوَ الَّذِي أَنشَأَ جَنَّاتٍ مَّعْرُوشَاتٍ وَغَيْرَ مَعْرُوشَاتٍ ... كُلُوا مِن ثَمَرِهِ إِذَا أَثْمَرَ وَآتُوا حَقَّهُ يَوْمَ حَصَادِهِ [___] إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ",
     "fullVerseArabic": "وَلَا تُسْرِفُوا إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 141,
-    "comparisonVerseArabic": "وَلَا تُسْرِفُوا إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ",
-    "prompt": "ما النهي الإلهي في ختام الآية 141 من سورة الأنعام بعد إيتاء حق الحصاد؟",
-    "promptArabic": "في سورة الأنعام الآية 141: ما الجملة السابقة لقوله: (إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ)؟",
+    "comparisonSurahNumber": 7,
+    "comparisonSurahName": "الأعراف",
+    "comparisonAyahNumber": 31,
+    "comparisonVerseArabic": "يَا بَنِي آدَمَ خُذُوا زِينَتَكُمْ عِندَ كُلِّ مَسْجِدٍ وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ",
+    "prompt": "مقارنة بين الأنعام 141 والأعراف 31 في النهي عن الإسراف",
+    "promptArabic": "في سورة الأنعام الآية 141: ما اللفظ الذي سبق قوله تعالى: (إِنَّهُ لَا يُحِبُّ الْمُسْرِفِينَ)؟",
     "options": [
       {
         "id": "opt-1",
         "text": "وَلَا تُسْرِفُوا",
         "isCorrect": true,
-        "highlightPart": "وَلَا تُسْرِفُوا"
+        "highlightPart": "الأنعام 141: وَلَا تُسْرِفُوا وحدها"
       },
       {
         "id": "opt-2",
-        "text": "وَلَا تُبَذِّرُوا تَبْذِيرًا",
-        "isCorrect": false,
-        "highlightPart": "في سورة الإسراء 26"
-      },
-      {
-        "id": "opt-3",
         "text": "وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا",
         "isCorrect": false,
-        "highlightPart": "في سورة الأعراف 31"
+        "highlightPart": "الأعراف 31: وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا"
       }
     ],
     "exactDifferenceNote": "في الأنعام 141: (كُلُوا مِن ثَمَرِهِ إِذَا أَثْمَرَ وَآتُوا حَقَّهُ يَوْمَ حَصَادِهِ وَلَا تُسْرِفُوا). وفي الأعراف 31: (وَكُلُوا وَاشْرَبُوا وَلَا تُسْرِفُوا).",
-    "explanation": "ضابط الحفظ: الانفراد بالنهي المفرد (وَلَا تُسْرِفُوا) بعد إخراج زكاة الزروع والثمار.",
+    "explanation": "ضابط الحفظ: الانفراد بالنهي المفرد (وَلَا تُسْرِفُوا) بعد إخراج زكاة الزروع والثمار في الأنعام.",
     "isKidsRecommended": true
   },
   {
-    "id": "anam-145-baghy-internal",
+    "id": "anam-145-baghy-external",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 145,
     "questionType": "sequence_order",
     "verseSnippet": "قُل لَّا أَجِدُ فِي مَا أُوحِيَ إِلَيَّ مُحَرَّمًا عَلَىٰ طَاعِمٍ يَطْعَمُهُ إِلَّا أَن يَكُونَ مَيْتَةً أَوْ دَمًا مَّسْفُوحًا أَوْ لَحْمَ خِنزِيرٍ فَإِنَّهُ رِجْسٌ أَوْ فِسْقًا [___]",
     "fullVerseArabic": "أُهِلَّ لِغَيْرِ اللَّهِ بِهِ فَمَنِ اضْطُرَّ غَيْرَ بَاغٍ وَلَا عَادٍ فَإِنَّ رَبَّكَ غَفُورٌ رَّحِيمٌ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 145,
-    "comparisonVerseArabic": "أُهِلَّ لِغَيْرِ اللَّهِ بِهِ",
-    "prompt": "انفراد سورة الأنعام 145 بتأخير الجار والمجرور (بِهِ)",
+    "comparisonSurahNumber": 2,
+    "comparisonSurahName": "البقرة",
+    "comparisonAyahNumber": 173,
+    "comparisonVerseArabic": "إِنَّمَا حَرَّمَ عَلَيْكُمُ الْمَيْتَةَ وَالدَّمَ وَلَحْمَ الْخِنزِيرِ وَمَا أُهِلَّ بِهِ لِغَيْرِ اللَّهِ",
+    "prompt": "مقارنة انفراد الأنعام 145 بتأخير الجار والمجرور (بِهِ) مع سائر القرآن",
     "promptArabic": "في سورة الأنعام الآية 145: كيف ورد ترتيب قوله تعالى بعد ذكر الفسق؟",
     "options": [
       {
         "id": "opt-1",
-        "text": "أُهِلَّ لِغَيْرِ اللَّهِ بِهِ (بتأخير بِهِ)",
+        "text": "أُهِلَّ لِغَيْرِ اللَّهِ بِهِ",
         "isCorrect": true,
-        "highlightPart": "أُهِلَّ لِغَيْرِ اللَّهِ بِهِ"
+        "highlightPart": "الأنعام 145: بتأخير بِهِ"
       },
       {
         "id": "opt-2",
-        "text": "أُهِلَّ بِهِ لِغَيْرِ اللَّهِ (بتقديم بِهِ)",
+        "text": "أُهِلَّ بِهِ لِغَيْرِ اللَّهِ",
         "isCorrect": false,
-        "highlightPart": "في البقرة والمائدة والنحل"
+        "highlightPart": "البقرة والمائدة والنحل: بتقديم بِهِ"
       }
     ],
     "exactDifferenceNote": "انفردت سورة الأنعام 145 بـ (أُهِلَّ لِغَيْرِ اللَّهِ بِهِ) بتأخير (به)، في حين وردت في البقرة والمائدة والنحل بتقديم (به): (أُهِلَّ بِهِ لِغَيْرِ اللَّهِ).",
@@ -5896,41 +5135,291 @@ export const MUTASHABIHAT_QUESTIONS: MutashabihaQuestion[] = [
     "isKidsRecommended": true
   },
   {
-    "id": "anam-165-saree-ul-iqab",
+    "id": "anam-165-araf-167-saree-ul-iqab",
     "surahNumber": 6,
     "surahName": "الأنعام",
     "ayahNumber": 165,
     "questionType": "ayah_ending",
     "verseSnippet": "وَهُوَ الَّذِي جَعَلَكُمْ خَلَائِفَ الْأَرْضِ وَرَفَعَ بَعْضَكُمْ فَوْقَ بَعْضٍ دَرَجَاتٍ لِّيَبْلُوَكُمْ فِي مَا آتَاكُمْ [___]",
     "fullVerseArabic": "إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ",
-    "comparisonSurahNumber": 6,
-    "comparisonSurahName": "الأنعام",
-    "comparisonAyahNumber": 165,
-    "comparisonVerseArabic": "إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ",
-    "prompt": "ما ختام سورة الأنعام المباركة [الآية 165]؟",
-    "promptArabic": "ما خاتمة آخر آية في سورة الأنعام [الآية 165]؟",
+    "comparisonSurahNumber": 7,
+    "comparisonSurahName": "الأعراف",
+    "comparisonAyahNumber": 167,
+    "comparisonVerseArabic": "وَإِذْ تَأَذَّنَ رَبُّكَ لَيَبْعَثَنَّ عَلَيْهِمْ إِلَىٰ يَوْمِ الْقِيَامَةِ مَن يَسُومُهُمْ سُوءَ الْعَذَابِ إِنَّ رَبَّكَ لَسَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ",
+    "prompt": "مقارنة بين ختام الأنعام 165 والأعراف 167 في لام التوكيد مع سريع العقاب",
+    "promptArabic": "في ختام سورة الأنعام [الآية 165]: هل وردت (إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ) بدون لام أم (إِنَّ رَبَّكَ لَسَرِيعُ الْعِقَابِ) بلام التوكيد كما في الأعراف؟",
     "options": [
       {
         "id": "opt-1",
         "text": "إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ",
         "isCorrect": true,
-        "highlightPart": "إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ"
+        "highlightPart": "الأنعام 165: بدون لام توكيد"
       },
       {
         "id": "opt-2",
-        "text": "إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ",
+        "text": "إِنَّ رَبَّكَ لَسَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ",
         "isCorrect": false,
-        "highlightPart": "في مواضع أخرى"
-      },
-      {
-        "id": "opt-3",
-        "text": "وَاللَّهُ عَزِيزٌ ذُو انتِقَامٍ",
-        "isCorrect": false,
-        "highlightPart": "في سورة آل عمران والمائدة"
+        "highlightPart": "الأعراف 167: بلام التوكيد (لَسَرِيعُ)"
       }
     ],
-    "exactDifferenceNote": "ختمت سورة الأنعام 165 بـ: (إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ وَإِنَّهُ لَغَفُورٌ رَّحِيمٌ) بالواو وإنّ (وَإِنَّهُ لَغَفُورٌ).",
-    "explanation": "ضابط الخاتمة: الموازنة بين الترهيب والترغيب (سريع العقاب) مع تقديم المغفرة والرحمة المؤكدة (وإنه لغفور رحيم).",
+    "exactDifferenceNote": "ختمت سورة الأنعام 165 بـ: (إِنَّ رَبَّكَ سَرِيعُ الْعِقَابِ) بدون لام التوكيد، بينما في الأعراف 167: (إِنَّ رَبَّكَ لَسَرِيعُ الْعِقَابِ) بلام التوكيد.",
+    "explanation": "ضابط الخاتمة: الموازنة بين الترهيب والترغيب (سريع العقاب) مع تقديم المغفرة والرحمة المؤكدة (وإنه لغفور رحيم)، وفي الأعراف توكيد باللام لسياق بني إسرائيل.",
     "isKidsRecommended": true
+  },
+  {
+    "id": "anam-1-150-rabihim-yadiloon",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 1,
+    "questionType": "ayah_ending",
+    "verseSnippet": "الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَجَعَلَ الظُّلُمَاتِ وَالنُّورَ [___]",
+    "fullVerseArabic": "الْحَمْدُ لِلَّهِ الَّذِي خَلَقَ السَّمَاوَاتِ وَالْأَرْضَ وَجَعَلَ الظُّلُمَاتِ وَالنُّورَ ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 150,
+    "comparisonVerseArabic": "قُلْ هَلُمَّ شُهَدَاءَكُمُ الَّذِينَ يَشْهَدُونَ أَنَّ اللَّهَ حَرَّمَ هَٰذَا ۖ فَإِن شَهِدُوا فَلَا تَشْهَدْ مَعَهُمْ ۚ وَلَا تَتَّبِعْ أَهْوَاءَ الَّذِينَ كَذَّبُوا بِآيَاتِنَا وَالَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ وَهُم بِرَبِّهِمْ يَعْدِلُونَ",
+    "prompt": "ما ختام مطلع سورة الأنعام [الآية 1] مقارنة بالآية 150 في السورة نفسها؟",
+    "promptArabic": "ما ختام مطلع سورة الأنعام [الآية 1] مقارنة بالآية 150 في السورة نفسها؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ",
+        "isCorrect": true,
+        "highlightPart": "ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَهُم بِرَبِّهِمْ يَعْدِلُونَ",
+        "isCorrect": false,
+        "highlightPart": "وَهُم بِرَبِّهِمْ يَعْدِلُونَ (الأنعام: 150)"
+      }
+    ],
+    "exactDifferenceNote": "في مطلع الأنعام (الآية 1): {ثُمَّ الَّذِينَ كَفَرُوا بِرَبِّهِمْ يَعْدِلُونَ}، بينما في ختام الآية 150: {وَهُم بِرَبِّهِمْ يَعْدِلُونَ}.",
+    "explanation": "قاعدة الضبط: بدأت السورة بالتصريح بالكفر {ثُمَّ الَّذِينَ كَفَرُوا} في المطلع تعظيماً لشناعة الشرك، وخُتمت الآية 150 بالضمير {وَهُم بِرَبِّهِمْ يَعْدِلُونَ} بعد تفصيل مساوئهم.",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-21-144-man-azlamu-waw-fa",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 21,
+    "questionType": "single_letter",
+    "verseSnippet": "[___] مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ كَذِبًا أَوْ كَذَّبَ بِآيَاتِهِ ۗ إِنَّهُ لَا يُفْلِحُ الظَّالِمُونَ",
+    "fullVerseArabic": "وَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ كَذِبًا أَوْ كَذَّبَ بِآيَاتِهِ ۗ إِنَّهُ لَا يُفْلِحُ الظَّالِمُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 144,
+    "comparisonVerseArabic": "فَمَنْ أَظْلَمُ مِمَّنِ افْتَرَىٰ عَلَى اللَّهِ كَذِبًا لِيُضِلَّ النَّاسَ بِغَيْرِ عِلْمٍ ۗ إِنَّ اللَّهَ لَا يَهْدِي الْقَوْمَ الظَّالِمِينَ",
+    "prompt": "بأي حرف عطف بدأت الآية 21 في سورة الأنعام مقارنة بالآية 144؟",
+    "promptArabic": "بأي حرف عطف بدأت الآية 21 في سورة الأنعام مقارنة بالآية 144؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "وَمَنْ أَظْلَمُ",
+        "isCorrect": true,
+        "highlightPart": "وَمَنْ أَظْلَمُ"
+      },
+      {
+        "id": "opt-2",
+        "text": "فَمَنْ أَظْلَمُ",
+        "isCorrect": false,
+        "highlightPart": "فَمَنْ أَظْلَمُ (الأنعام: 144)"
+      }
+    ],
+    "exactDifferenceNote": "في الأنعام جاءت بالواو {وَمَنْ أَظْلَمُ} في موضعي (21 و93)، وبالفاء {فَمَنْ أَظْلَمُ} في موضعي (144 و157).",
+    "explanation": "ضابط الهجاء في الأنعام: حرف الواو أسبق من الفاء في الترتيب؛ فالموضعان الأولان بالواو (21، 93) والموضعان الأخيران بالفاء (144، 157).",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-97-105-fassalna-sarrafna",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 97,
+    "questionType": "phrase_diff",
+    "verseSnippet": "وَهُوَ الَّذِي جَعَلَ لَكُمُ النُّجُومَ لِتَهْتَدُوا بِهَا فِي ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ ۗ [___] لِقَوْمٍ يَعْلَمُونَ",
+    "fullVerseArabic": "وَهُوَ الَّذِي جَعَلَ لَكُمُ النُّجُومَ لِتَهْتَدُوا بِهَا فِي ظُلُمَاتِ الْبَرِّ وَالْبَحْرِ ۗ قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَعْلَمُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 105,
+    "comparisonVerseArabic": "وَكَذَٰلِكَ نُصَرِّفُ الْآيَاتِ وَلِيَقُولُوا دَرَسْتَ وَلِنُبَيِّنَهُ لِقَوْمٍ يَعْلَمُونَ",
+    "prompt": "ما العبارة الواردة قبل {لِقَوْمٍ يَعْلَمُونَ} في الآية 97 من سورة الأنعام مقارنة بالآية 105؟",
+    "promptArabic": "ما العبارة الواردة قبل {لِقَوْمٍ يَعْلَمُونَ} في الآية 97 من سورة الأنعام مقارنة بالآية 105؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "قَدْ فَصَّلْنَا الْآيَاتِ",
+        "isCorrect": true,
+        "highlightPart": "قَدْ فَصَّلْنَا الْآيَاتِ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَكَذَٰلِكَ نُصَرِّفُ الْآيَاتِ وَلِيَقُولُوا دَرَسْتَ وَلِنُبَيِّنَهُ",
+        "isCorrect": false,
+        "highlightPart": "وَكَذَٰلِكَ نُصَرِّفُ الْآيَاتِ وَلِيَقُولُوا دَرَسْتَ وَلِنُبَيِّنَهُ (الأنعام: 105)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 97: {قَدْ فَصَّلْنَا الْآيَاتِ لِقَوْمٍ يَعْلَمُونَ}، بينما في آية 105: {وَكَذَٰلِكَ نُصَرِّفُ الْآيَاتِ وَلِيَقُولُوا دَرَسْتَ وَلِنُبَيِّنَهُ لِقَوْمٍ يَعْلَمُونَ}.",
+    "explanation": "قاعدة الضبط: في آية النجوم تفصيل للعلامات الكونية الهادية {قَدْ فَصَّلْنَا}، وفي آية الحجاج تصريف ومجادلة {وَكَذَٰلِكَ نُصَرِّفُ الْآيَاتِ وَلِيَقُولُوا دَرَسْتَ}.",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-100-136-wajaaloo-lillahi",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 100,
+    "questionType": "phrase_diff",
+    "verseSnippet": "[___] شُرَكَاءَ الْجِنَّ وَخَلَقَهُمْ ۖ وَخَرَقُوا لَهُ بَنِينَ وَبَنَاتٍ بِغَيْرِ عِلْمٍ ۚ سُبْحَانَهُ وَتَعَالَىٰ عَمَّا يَصِفُونَ",
+    "fullVerseArabic": "وَجَعَلُوا لِلَّهِ شُرَكَاءَ الْجِنَّ وَخَلَقَهُمْ ۖ وَخَرَقُوا لَهُ بَنِينَ وَبَنَاتٍ بِغَيْرِ عِلْمٍ ۚ سُبْحَانَهُ وَتَعَالَىٰ عَمَّا يَصِفُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 136,
+    "comparisonVerseArabic": "وَجَعَلُوا لِلَّهِ مِمَّا ذَرَأَ مِنَ الْحَرْثِ وَالْأَنْعَامِ نَصِيبًا فَقَالُوا هَٰذَا لِلَّهِ بِزَعْمِهِمْ وَهَٰذَا لِشُرَكَائِنَا",
+    "prompt": "ما المفعول بعد {وَجَعَلُوا لِلَّهِ} في الآية 100 من سورة الأنعام مقارنة بالآية 136؟",
+    "promptArabic": "ما المفعول بعد {وَجَعَلُوا لِلَّهِ} في الآية 100 من سورة الأنعام مقارنة بالآية 136؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "وَجَعَلُوا لِلَّهِ شُرَكَاءَ الْجِنَّ",
+        "isCorrect": true,
+        "highlightPart": "شُرَكَاءَ الْجِنَّ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَجَعَلُوا لِلَّهِ مِمَّا ذَرَأَ مِنَ الْحَرْثِ وَالْأَنْعَامِ نَصِيبًا",
+        "isCorrect": false,
+        "highlightPart": "مِمَّا ذَرَأَ مِنَ الْحَرْثِ وَالْأَنْعَامِ نَصِيبًا (الأنعام: 136)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 100: {وَجَعَلُوا لِلَّهِ شُرَكَاءَ الْجِنَّ}، بينما في آية 136: {وَجَعَلُوا لِلَّهِ مِمَّا ذَرَأَ مِنَ الْحَرْثِ وَالْأَنْعَامِ نَصِيبًا}.",
+    "explanation": "ضابط الترتيب: تقديم شرك العبادة والاعتقاد بالأرواح والجن أولاً (100)، ثم تفصيل شرك التقرب بالأنعام والحرث والذبائح لاحقاً (136).",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-113-120-muqtarifoon-yaqtarifoon",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 113,
+    "questionType": "single_word",
+    "verseSnippet": "وَلِتَصْغَىٰ إِلَيْهِ أَفْئِدَةُ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ وَلِيَرْضَوْهُ وَلِيَقْتَرِفُوا [___]",
+    "fullVerseArabic": "وَلِتَصْغَىٰ إِلَيْهِ أَفْئِدَةُ الَّذِينَ لَا يُؤْمِنُونَ بِالْآخِرَةِ وَلِيَرْضَوْهُ وَلِيَقْتَرِفُوا مَا هُم مُّقْتَرِفُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 120,
+    "comparisonVerseArabic": "وَذَرُوا ظَاهِرَ الْإِثْمِ وَبَاطِنَهُ ۚ إِنَّ الَّذِينَ يَكْسِبُونَ الْإِثْمَ سَيُجْزَوْنَ بِمَا كَانُوا يَقْتَرِفُونَ",
+    "prompt": "ما صيغة لفظ الاقتراف في ختام الآية 113 من سورة الأنعام مقارنة بالآية 120؟",
+    "promptArabic": "ما صيغة لفظ الاقتراف في ختام الآية 113 من سورة الأنعام مقارنة بالآية 120؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "مَا هُم مُّقْتَرِفُونَ",
+        "isCorrect": true,
+        "highlightPart": "مَا هُم مُّقْتَرِفُونَ"
+      },
+      {
+        "id": "opt-2",
+        "text": "بِمَا كَانُوا يَقْتَرِفُونَ",
+        "isCorrect": false,
+        "highlightPart": "بِمَا كَانُوا يَقْتَرِفُونَ (الأنعام: 120)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 113 اسم فاعل مؤكد: {مَا هُم مُّقْتَرِفُونَ}، بينما في آية 120 فعل مضارع مستمر: {بِمَا كَانُوا يَقْتَرِفُونَ}.",
+    "explanation": "قاعدة التماثل اللفظي: في آية 113 سبق الفعل {وَلِيَقْتَرِفُوا} فناسب تجانس الفاصلة باسم الفاعل {مُّقْتَرِفُونَ}، وفي 120 ناسب جزاء الكسب المضارع المستمر.",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-116-148-yakhrusoon-takhrusoon",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 116,
+    "questionType": "single_word",
+    "verseSnippet": "وَإِن تُطِعْ أَكْثَرَ مَن فِي الْأَرْضِ يُضِلُّوكَ عَن سَبِيلِ اللَّهِ ۚ إِن يَتَّبِعُونَ إِلَّا الظَّنَّ [___]",
+    "fullVerseArabic": "وَإِن تُطِعْ أَكْثَرَ مَن فِي الْأَرْضِ يُضِلُّوكَ عَن سَبِيلِ اللَّهِ ۚ إِن يَتَّبِعُونَ إِلَّا الظَّنَّ وَإِنْ هُمْ إِلَّا يَخْرُصُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 148,
+    "comparisonVerseArabic": "سَيَقُولُ الَّذِينَ أَشْرَكُوا لَوْ شَاءَ اللَّهُ مَا أَشْرَكْنَا... قُلْ هَلْ عِندَكُم مِّنْ عِلْمٍ فَتُخْرِجُوهُ لَنَا ۖ إِن تَتَّبِعُونَ إِلَّا الظَّنَّ وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ",
+    "prompt": "ما ختام الآية 116 في سورة الأنعام مقارنة بختام الآية 148 في السورة نفسها؟",
+    "promptArabic": "ما ختام الآية 116 في سورة الأنعام مقارنة بختام الآية 148 في السورة نفسها؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "وَإِنْ هُمْ إِلَّا يَخْرُصُونَ",
+        "isCorrect": true,
+        "highlightPart": "وَإِنْ هُمْ إِلَّا يَخْرُصُونَ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ",
+        "isCorrect": false,
+        "highlightPart": "وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ (الأنعام: 148)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 116 بضمير الغائب: {وَإِنْ هُمْ إِلَّا يَخْرُصُونَ}، بينما في آية 148 بضمير المخاطب: {وَإِنْ أَنتُمْ إِلَّا تَخْرُصُونَ}.",
+    "explanation": "ضابط السياق: آية 116 في سياق الحديث عن عامة أهل الأرض غيبة {أَكْثَرَ مَن فِي الْأَرْضِ ... وَإِنْ هُمْ}، وآية 148 خطاب ومواجهة مباشرة {قُلْ هَلْ عِندَكُم ... وَإِنْ أَنتُمْ}.",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-70-120-wazari-wazaroo",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 70,
+    "questionType": "single_letter",
+    "verseSnippet": "[___] الَّذِينَ اتَّخَذُوا دِينَهُمْ لَعِبًا وَلَهْوًا وَغَرَّتْهُمُ الْحَيَاةُ الدُّنْيَا",
+    "fullVerseArabic": "وَذَرِ الَّذِينَ اتَّخَذُوا دِينَهُمْ لَعِبًا وَلَهْوًا وَغَرَّتْهُمُ الْحَيَاةُ الدُّنْيَا وَذَكِّرْ بِهِ أَن تُبْسَلَ نَفْسٌ بِمَا كَسَبَتْ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 120,
+    "comparisonVerseArabic": "وَذَرُوا ظَاهِرَ الْإِثْمِ وَبَاطِنَهُ ۚ إِنَّ الَّذِينَ يَكْسِبُونَ الْإِثْمَ سَيُجْزَوْنَ بِمَا كَانُوا يَقْتَرِفُونَ",
+    "prompt": "ما صيغة فعل الأمر في مطلع الآية 70 من سورة الأنعام مقارنة بالآية 120؟",
+    "promptArabic": "ما صيغة فعل الأمر في مطلع الآية 70 من سورة الأنعام مقارنة بالآية 120؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "وَذَرِ",
+        "isCorrect": true,
+        "highlightPart": "وَذَرِ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَذَرُوا",
+        "isCorrect": false,
+        "highlightPart": "وَذَرُوا (الأنعام: 120)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 70 أمر للمفرد: {وَذَرِ}، وفي آية 120 أمر للجماعة: {وَذَرُوا}.",
+    "explanation": "ضابط التكليف: الأول أمر إرشاد وتوجيه للنبي ﷺ وحده بالإعراض عن المعاندين {وَذَرِ}، والثاني تكليف شرعي عام لجماعة المؤمنين باجتناب الآثام {وَذَرُوا}.",
+    "isKidsRecommended": false
+  },
+  {
+    "id": "anam-108-127-yaamaloon",
+    "surahNumber": 6,
+    "surahName": "الأنعام",
+    "ayahNumber": 108,
+    "questionType": "phrase_diff",
+    "verseSnippet": "وَلَا تَسُبُّوا الَّذِينَ يَدْعُونَ مِن دُونِ اللَّهِ فَيَسُبُّوا اللَّهَ عَدْوًا بِغَيْرِ عِلْمٍ... ثُمَّ إِلَىٰ رَبِّهِم مَّرْجِعُهُمْ [___]",
+    "fullVerseArabic": "ثُمَّ إِلَىٰ رَبِّهِم مَّرْجِعُهُمْ فَيُنَبِّئُهُم بِمَا كَانُوا يَعْمَلُونَ",
+    "comparisonSurahNumber": 6,
+    "comparisonSurahName": "الأنعام",
+    "comparisonAyahNumber": 127,
+    "comparisonVerseArabic": "لَهُمْ دَارُ السَّلَامِ عِندَ رَبِّهِمْ ۖ وَهُوَ وَلِيُّهُم بِمَا كَانُوا يَعْمَلُونَ",
+    "prompt": "ما العبارة الواردة قبل {بِمَا كَانُوا يَعْمَلُونَ} في الآية 108 من سورة الأنعام مقارنة بالآية 127؟",
+    "promptArabic": "ما العبارة الواردة قبل {بِمَا كَانُوا يَعْمَلُونَ} في الآية 108 من سورة الأنعام مقارنة بالآية 127؟",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "فَيُنَبِّئُهُم بِمَا كَانُوا يَعْمَلُونَ",
+        "isCorrect": true,
+        "highlightPart": "فَيُنَبِّئُهُم بِمَا كَانُوا يَعْمَلُونَ"
+      },
+      {
+        "id": "opt-2",
+        "text": "وَهُوَ وَلِيُّهُم بِمَا كَانُوا يَعْمَلُونَ",
+        "isCorrect": false,
+        "highlightPart": "وَهُوَ وَلِيُّهُم بِمَا كَانُوا يَعْمَلُونَ (الأنعام: 127)"
+      }
+    ],
+    "exactDifferenceNote": "في آية 108: {فَيُنَبِّئُهُم بِمَا كَانُوا يَعْمَلُونَ}، وفي آية 127: {وَهُوَ وَلِيُّهُم بِمَا كَانُوا يَعْمَلُونَ}.",
+    "explanation": "ضابط السياق: آية 108 في إخبار المشركين وجزائهم بعد الرجوع، وآية 127 في ولاية الله لأهل دار السلام جزاء صالح أعمالهم.",
+    "isKidsRecommended": false
   }
 ];

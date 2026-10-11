@@ -71,7 +71,7 @@ export function queryKnowledgeBase(params: {
   const all = getFullKnowledgeBase();
   const surahIds = params.surahIds || [];
   const questionTypes = params.questionTypes || [];
-  const scope = params.comparisonScope || 'all_quran';
+  const scope = params.comparisonScope || 'internal_only';
 
   const filtered = all.filter((q) => {
     // 1. Question Type filter
